@@ -1,0 +1,1148 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Argon</title>
+
+    <link rel="icon" href="icono-positivo.png" type="image/x-icon" />
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.bunny.net" />
+    <link
+      href="https://fonts.bunny.net/css?family=figtree:400,600&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Manrope font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7de6ab665e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+      .bg-change {
+        background-image: url("home_argon-01.jpg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        animation: change 10s infinite;
+
+        @keyframes change {
+          0% {
+            background-image: url("home_argon-01.jpg");
+          }
+
+          50% {
+            background-image: url("home_argon-02.jpg");
+          }
+
+          100% {
+            background-image: url("home_argon-03.jpg");
+          }
+        }
+      }
+
+      .swiper-horizontal > .swiper-pagination-bullets,
+      .swiper-pagination-bullets.swiper-pagination-horizontal,
+      .swiper-pagination-custom,
+      .swiper-pagination-fraction {
+        bottom: -7px;
+        left: 76px;
+      }
+
+      .swiper-pagination-bullet {
+        background-color: #1754fe;
+        border: solid 1px #061433;
+        width: 1rem;
+        height: 1rem;
+        opacity: 1;
+      }
+
+      .swiper-pagination-bullet-active {
+        background-color: #061433;
+      }
+    </style>
+  </head>
+
+  <body class="font-manrope appearance-none">
+    <!-- START OF HEADER -->
+    <header class="relative">
+      <!-- START OF NAVBAR -->
+      <nav
+        class="absolute w-full flex justify-between items-start px-11 bg-transparent"
+      >
+        <a href="/">
+          <img
+            class="w-80"
+            src="logo_argon_sin_fondo_texto_blanco.png"
+            alt="logo-argon"
+          />
+        </a>
+        <div class="pt-16 flex flex-col">
+          <div class="flex items-center gap-3 mr-3">
+            <a
+              href="#"
+              class="appearance-none bg-transparent rounded-2xl uppercase text-sm text-white font-bold flex items-center justify-center h-[1.45rem] w-[4.25rem] border border-white focus:outline-none focus:text-white focus:pl-8"
+            >
+              <span>login</span>
+            </a>
+            <div class="flex items-center">
+              <div class="relative">
+                <input
+                  type="search"
+                  class="appearance-none bg-transparent rounded-2xl h-[1.45rem] w-[8.5rem] border border-white focus:outline-none focus:text-white focus:pl-8"
+                  name="search-bar"
+                  id="search-bar"
+                />
+                <img
+                  src="search-icon.png"
+                  class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                  alt=""
+                />
+              </div>
+            </div>
+            <button type="button" class="menu-btn focus:outline-none">
+              <img src="menu-icon.png" class="w-8" alt="" />
+            </button>
+          </div>
+          <div class="menu hidden text-end">
+            <div class="flex flex-col text-white font-[200] text-xs pr-4 pt-4">
+              <a href="quienes-somos.html">Quiénes somos</a>
+              <a href="productos-y-servicios.html"
+                >Productos & servicios</a
+              >
+              <a href="stack-tecnologico.html">Stack tecnológico</a>
+              <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
+              <a href="equipo-argon.html">Equipo Argón</a>
+              <a href="habla-con-argon.html">Hablá con Argón</a>
+              <a href="">Campus Argón</a>
+              <a href="news.html">News</a>
+            </div>
+          </div>
+        </div>
+      </nav>
+      <!-- END OF NAVBAR -->
+      <img src="home_argon-01.jpg" alt="" />
+
+      <div
+        class="absolute left-[4.5rem] top-44 flex flex-col gap-2 text-6xl text-white font-thin w-2/6"
+      >
+        Nuestro mundo gira alrededor
+        <span class="text-secondary-600 font-bold">tuyo.</span>
+      </div>
+      <div
+        class="absolute left-[4.5rem] bottom-28 lg:bottom-[6.5rem] xl:bottom-28 pl-1.5"
+      >
+        <p class="text-base font-thin text-white w-7/12">
+          Creamos soluciones tecnológicas ágiles y seguras para tu empresa.
+        </p>
+      </div>
+      <div class="absolute left-[4.5rem] bottom-10 bg-white py-1.5 px-5 ml-1.5">
+        <a href="" class="flex items-center gap-3">
+          <span class="text-base text-primary-700 font-black"
+            >Contactanos hoy</span
+          >
+          <div
+            class="flex items-center justify-center w-5 h-5 bg-secondary-600 text-white rounded-full"
+          >
+            <span class="text-lg font-[200] pb-0.5">-></span>
+          </div>
+        </a>
+      </div>
+    </header>
+    <!-- END OF HEADER -->
+    <!-- START OF PRODUCTS -->
+    <div class="bg-white flex flex-col items-center justify-center py-7">
+      <div class="flex flex-col gap-6 items-center justify-center">
+        <h2 class="text-[1.35rem] text-secondary-600 font-extrabold">
+          Productos & servicios
+        </h2>
+        <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[1.5px]"></div>
+      </div>
+      <div class="flex items-center gap-[7.5rem] py-11">
+        <div class="flex flex-col pr-6">
+          <div class="flex items-center gap-4">
+            <img src="icono-positivo-copy.png" class="w-20" alt="" />
+            <p class="text-[2rem] font-[400] pt-4">Tech</p>
+          </div>
+          <div class="ml-4 mt-10">
+            <ul
+              class="text-[1.05rem] leading-[1.65rem] text-secondary-600 font-[300]"
+            >
+              <li class="flex items-center gap-1.5">
+                <div
+                  class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80"
+                ></div>
+                <p>Lending 360</p>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <div
+                  class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80"
+                ></div>
+                <p>Payments</p>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <div
+                  class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80"
+                ></div>
+                <p>Factoring</p>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <div
+                  class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80"
+                ></div>
+                <p>Onboarding</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ml-4 mt-6">
+            <a
+              href=""
+              class="flex items-center justify-center gap-3 bg-secondary-600 py-1 w-[8.25rem]"
+            >
+              <span class="text-[0.8rem] text-white font-bold">Saber más</span>
+              <div
+                class="flex items-center justify-center w-4 h-4 bg-primary-700 text-white rounded-full"
+              >
+                <span class="text-base font-[200] pb-0.5">-></span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="h-72 bg-primary-700 bg-opacity-60 w-[1.5px]"></div>
+        <div class="flex flex-col">
+          <div class="flex items-center gap-4">
+            <img src="icono-positivo-copy.png" class="w-20" alt="" />
+            <p class="text-[2rem] font-[400] pt-4">Inclusion</p>
+          </div>
+          <div class="ml-4 mt-10">
+            <ul
+              class="text-[1.05rem] leading-[1.65rem] text-secondary-600 font-[300]"
+            >
+              <li class="flex items-center gap-1.5">
+                <div
+                  class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80"
+                ></div>
+                <p>Mujeresxmas</p>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <div
+                  class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80"
+                ></div>
+                <p>Punto Pyme</p>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <div
+                  class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80"
+                ></div>
+                <p>Digital Academy</p>
+              </li>
+              <li class="flex items-center gap-1.5">
+                <div
+                  class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80"
+                ></div>
+                <p>Posta Digital</p>
+              </li>
+            </ul>
+          </div>
+          <div class="ml-4 mt-5">
+            <a
+              href=""
+              class="flex items-center justify-center gap-4 bg-primary-700 py-1 w-[8.25rem]"
+            >
+              <span class="text-[0.8rem] text-white font-bold">Saber más</span>
+              <div
+                class="flex items-center justify-center w-4 h-4 bg-secondary-600 text-white rounded-full"
+              >
+                <span class="text-base font-[200] pb-0.5">-></span>
+              </div>
+            </a>
+          </div>
+        </div>
+        <div class="flex gap-12">
+          <div class="h-72 bg-primary-700 bg-opacity-60 w-[1.5px]"></div>
+          <div class="flex flex-col">
+            <div class="flex items-center gap-4">
+              <img src="icono-positivo-copy.png" class="w-20" alt="" />
+              <p class="text-[2rem] font-[400] pt-4">Consulting</p>
+            </div>
+            <div class="ml-4 mt-10">
+              <ul
+                class="text-[1.05rem] leading-[1.65rem] text-secondary-600 font-[300]"
+              >
+                <li>
+                  <div class="flex items-center gap-1.5">
+                    <div
+                      class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80 mt-1"
+                    ></div>
+                    <p>Innovación y</p>
+                  </div>
+                  <p>transformación digital</p>
+                </li>
+                <li>
+                  <div class="flex items-center gap-1.5">
+                    <div
+                      class="w-3 h-[1.25px] bg-secondary-600 bg-opacity-80 mt-1"
+                    ></div>
+                    <p>Gestión del cambio</p>
+                  </div>
+                  <p>organizacional</p>
+                </li>
+              </ul>
+            </div>
+            <div class="ml-4 mt-7">
+              <a
+                href=""
+                class="flex items-center justify-center gap-4 bg-primary-700 py-1 w-[8.25rem]"
+              >
+                <span class="text-[0.8rem] text-white font-bold"
+                  >Saber más</span
+                >
+                <div
+                  class="flex items-center justify-center w-4 h-4 bg-secondary-600 text-white rounded-full"
+                >
+                  <span class="text-base font-[200] pb-0.5">-></span>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END OF PRODUCTS -->
+    <!-- START OF IMAGE BANNER -->
+    <section class="relative">
+      <img src="home_argon-04.jpg" alt="" />
+      <div class="absolute left-20 top-14 flex flex-col gap-2">
+        <div class="flex items-center gap-3 text-white">
+          <span class="text-5xl leading-none font-[200]">-></span>
+          <span class="text-5xl leading-none font-[200]">Tecnología</span>
+        </div>
+        <div class="flex items-center gap-3 text-white">
+          <span class="text-5xl leading-none font-[200]">-></span>
+          <span class="text-5xl leading-none text-white font-[200]"
+            >Innovación</span
+          >
+        </div>
+        <div class="flex items-center gap-3 text-secondary-600">
+          <span class="text-5xl leading-none font-extrabold">-></span>
+          <span class="text-5xl leading-none font-extrabold">Versatilidad</span>
+        </div>
+      </div>
+      <div class="absolute left-20 bottom-8 flex flex-col gap-2">
+        <span class="text-5xl leading-none text-secOrange-600 font-extrabold"
+          >Servicio 360°</span
+        >
+        <span class="text-5xl leading-none text-white font-[200]"
+          >Multiplataforma</span
+        >
+      </div>
+      <div class="absolute right-20 bottom-11 flex flex-col gap-2">
+        <a
+          href=""
+          class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-600 text-white"
+        >
+          <span class="text-5xl font-[200]">+</span>
+        </a>
+      </div>
+    </section>
+    <!-- END OF IMAGE BANNER -->
+    <!-- START OF SERVICE SWIPER -->
+    <section
+      class="pb-6 flex items-center bg-secondary-600 text-white text-3xl font-[200]"
+    >
+      <div class="swiper mySwiper py-7">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide px-20">
+            <p>Servicios digitales a la medida del cliente</p>
+          </div>
+          <div class="swiper-slide px-20">
+            <p>Impulsamos la transformación y la inclusión</p>
+          </div>
+          <div class="swiper-slide px-20">
+            <p>Creamos soluciones para que puedas enfocarte en tu negocio</p>
+          </div>
+          <div class="swiper-slide px-20">
+            <p>Ofrecemos un servicio 360° -> Multiplataforma</p>
+          </div>
+          <div class="swiper-slide px-20">
+            <p>Favorecemos la omnicanalidad</p>
+          </div>
+          <div class="swiper-slide px-20">
+            <p class="font-[700]">Seguí tu impulso</p>
+          </div>
+        </div>
+        <div class="text-start swiper-pagination"></div>
+      </div>
+    </section>
+    <!-- END OF SERVICE SWIPER -->
+    <!-- START OF TECH STACK -->
+    <section class="bg-white flex flex-col items-center">
+      <div class="flex flex-col gap-6 items-center justify-center pt-6">
+        <h2 class="text-[1.35rem] text-secondary-600 font-extrabold">
+          Stack tecnológico
+        </h2>
+        <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[1.25px]"></div>
+      </div>
+      <div class="pt-6">
+        <p
+          class="flex flex-col items-center justify-center text-base text-primary-700 font-[400]"
+        >
+          <span
+            >Reduce costos adicionales en nuevos desarrollos, y/o adecuaciones
+            de servicios</span
+          >
+          <span>Reduce el time to market de nuevos servicios</span>
+          <span>Facilita la escalabilidad y la interoperabilidad</span>
+        </p>
+      </div>
+      <img src="logos_stack_home.jpg" class="pt-10 pb-5" alt="stack" />
+    </section>
+    <!-- END OF TECH STACK -->
+    <!-- START OF CLIENTS -->
+    <section class="bg-white flex flex-col items-center">
+      <div
+        class="w-[90%] bg-primary-700 bg-opacity-80 h-[0.07rem] shadow-lg shadow-primary-700"
+      ></div>
+      <div class="flex flex-col gap-7 items-center justify-center py-6">
+        <h2 class="text-[1.35rem] text-secondary-600 font-extrabold">
+          Clientes & experiencias
+        </h2>
+        <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"></div>
+      </div>
+    </section>
+    <section class="pb-12">
+      <div class="swiper clientSwiper">
+        <div class="swiper-wrapper">
+          <!-- yapstone -->
+          <div class="swiper-slide flex justify-center flex-col">
+            <div class="flex justify-center">
+              <img
+                src="yapstone_logo.png"
+                class="flex justify-center w-[8.5rem]"
+              />
+            </div>
+
+            <div class="flex justify-center mt-5">
+              <p
+                class="flex flex-col justify-center text-[1.2rem] leading-[1.7rem] text-primary-700 font-[400] relative"
+              >
+                <img
+                  src="comillas-abre.png"
+                  class="absolute left-[14%] top-[21%] w-14"
+                  alt="comillas-01"
+                />
+                <span class="text-center"
+                  >Yapstone needed integration with BIND for Argentina payments
+                  immediately.
+                </span>
+                <span class="text-center mx-80">
+                  Engaged with Allen Geier's team and they did a splendid job to
+                  achieve this quickly. They were able to accommodate the
+                  required changes instantly by going above and beyond.
+                </span>
+                <span class="text-center">
+                  They also brought in their own project manager to manage the
+                  team for free.
+                </span>
+                <span class="text-center mx-96">
+                  Allen was great at communicating in English with us and
+                  Spanish with BIND team as well.
+                </span>
+                <span class="text-center">
+                  Thank you for all your support and helping us integrate with
+                  BIND.
+                </span>
+                <img
+                  src="comillas-cierre.png"
+                  class="absolute right-[14%] bottom-[21%] w-14"
+                  alt="comillas-02"
+                />
+              </p>
+            </div>
+            <div class="flex justify-center mt-7">
+              <p
+                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+              >
+                Neelima Brungi, IT Manager, USA
+              </p>
+            </div>
+            <div class="flex items-center justify-center gap-10 mt-16">
+              <img
+                src="adecash_logo.png"
+                class="w-[4.25rem]"
+                alt="adecash-logo"
+              />
+              <img src="andes_logo.jpg" class="w-48" alt="andes-logo" />
+              <img src="avon_logo.png" class="w-44" alt="avon-logo" />
+              <img src="ba_logo.jpg" class="w-40" alt="ba-logo" />
+            </div>
+          </div>
+          <!-- avon -->
+          <div class="swiper-slide flex justify-center flex-col">
+            <div class="flex justify-center">
+              <img
+                src="avon_logo.png"
+                class="flex justify-center w-[8.5rem]"
+              />
+            </div>
+
+            <div class="flex justify-center mt-5">
+              <p
+                class="flex flex-col justify-center text-[1.2rem] leading-[1.7rem] text-primary-700 font-[400] relative"
+              >
+                <img
+                  src="comillas-abre.png"
+                  class="absolute left-[13%] top-[12%] w-14"
+                  alt="comillas-01"
+                />
+                <span class="text-center mx-56"
+                  >Desde el año 2015, utilizamos a CentraldePagos y su
+                  plataforma de sistemas como integrador de canales de pago en
+                  efectivo y links de pago con tarjeta de débito.
+                </span>
+                <span class="text-center">
+                  Se procesan más de 300M transacciones mensuales en todos los
+                  canales de pago.
+                </span>
+                <span class="text-center mx-52">
+                  Contamos con servicios webservice de notificaciones de pago y
+                  conciliaciones de transacciones ad-hoc integrados a nuestro
+                  ERP.
+                </span>
+                <span class="text-center">
+                  Nos prestan servicio y soporte a la operación.
+                </span>
+                <img
+                  src="comillas-cierre.png"
+                  class="absolute right-[13%] bottom-[11%] w-14"
+                  alt="comillas-02"
+                />
+              </p>
+            </div>
+            <div class="flex justify-center mt-7">
+              <p
+                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+              >
+                Gabriel Marsilli, Cosméticos Avon SACIFI, Argentina
+              </p>
+            </div>
+            <div class="flex items-center justify-center gap-10 mt-16">
+              <img
+                src="bancard_logo.jpg"
+                class="w-52"
+                alt="bancard-logo"
+              />
+              <img
+                src="LATAM - NATURA.png"
+                class="w-48"
+                alt="natura-logo"
+              />
+              <img
+                src="rapyd_logo.png"
+                class="w-[8.5rem]"
+                alt="rapyd-logo"
+              />
+              <img
+                src="violetta_logo.png"
+                class="w-44"
+                alt="violetta-logo"
+              />
+            </div>
+          </div>
+          <!-- natura -->
+          <div class="swiper-slide flex justify-center flex-col">
+            <div class="flex justify-center">
+              <img
+                src="LATAM - NATURA.png"
+                class="flex justify-center w-44"
+              />
+            </div>
+
+            <div class="flex justify-center mt-5">
+              <p
+                class="flex flex-col justify-center text-[1.2rem] leading-[1.7rem] text-primary-700 font-[400] relative"
+              >
+                <img
+                  src="comillas-abre.png"
+                  class="absolute left-[13%] top-[22%] w-14"
+                  alt="comillas-01"
+                />
+                <span class="text-center mx-64"
+                  >Utilizamos el Gateway de pago en efectivo de Consultora Argon
+                  SRL de manera continua durante más de 4 años. Esta solución
+                  tecnológica no solo se encarga de la última etapa de
+                  integración con los canales de pago, sino que también nos
+                  proporciona un respaldo excepcional. Enfrentamos cualquier
+                  incidente crítico en la operación, incluso fuera del horario
+                  laboral y durante los fines de semana, gracias al soporte
+                  eficiente que nos brinda el sistema. Esta herramienta
+                  tecnológica ha demostrado ser fundamental para mantener la
+                  continuidad operativa y resolver desafíos de manera efectiva
+                  en nuestro día a día.
+                </span>
+                <img
+                  src="comillas-cierre.png"
+                  class="absolute right-[13%] bottom-[21%] w-14"
+                  alt="comillas-02"
+                />
+              </p>
+            </div>
+            <div class="flex justify-center mt-7">
+              <p
+                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+              >
+                Fernanda Dominguez, IT, Natura&Co, Argentina
+              </p>
+            </div>
+            <div class="flex items-center justify-center gap-12 mt-16">
+              <img
+                src="bancorio_logo.png"
+                class="w-52"
+                alt="banco-rio-logo"
+              />
+              <img
+                src="capace_logo.png"
+                class="w-36"
+                alt="capace-logo"
+              />
+              <img
+                src="crypto_logo.png"
+                class="w-48"
+                alt="crypto-logo"
+              />
+              <img src="gire_logo.png" class="w-36" alt="gire-logo" />
+            </div>
+          </div>
+          <!-- adecash -->
+          <div class="swiper-slide flex justify-center flex-col">
+            <div class="flex justify-center">
+              <img
+                src="adecash_logo.png"
+                class="flex justify-center w-14"
+              />
+            </div>
+
+            <div class="flex justify-center mt-5">
+              <p
+                class="flex flex-col justify-center text-[1.2rem] leading-[1.7rem] text-primary-700 font-[400] relative"
+              >
+                <img
+                  src="comillas-abre.png"
+                  class="absolute left-[13%] top-[13%] w-14"
+                  alt="comillas-01"
+                />
+                <span class="text-center mx-64"
+                  >Mantuvimos una plática con el equipo de Argon, estábamos en
+                  busca de una herramienta y gestionar préstamos de anticipo de
+                  haberes a través de la nómina de los empleados. De ahí surgió
+                  Adecash. Quiero expresar mi agradecimiento al equipo
+                </span>
+                <span class="text-center mx-[18.5rem]">
+                  de Argonglobal.tech; entendieron perfectamente lo que
+                  necesitábamos y nos facilitaron todo el proceso, desde el
+                  inicio del proyecto hasta la implementación del servicio.
+                  ¡Gracias totales!
+                </span>
+                <img
+                  src="comillas-cierre.png"
+                  class="absolute right-[13%] bottom-[12%] w-14"
+                  alt="comillas-02"
+                />
+              </p>
+            </div>
+            <div class="flex justify-center mt-7">
+              <p
+                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+              >
+                José Antonio Klimos, Adecash, México
+              </p>
+            </div>
+            <div class="flex items-center justify-center gap-10 mt-16">
+              <img src="link_logo.png" class="w-14" alt="link-logo" />
+              <img
+                src="metrogas_logo.png"
+                class="w-[7.5rem]"
+                alt="metrogas-logo"
+              />
+              <img
+                src="prisma_logo.png"
+                class="w-[10.75rem]"
+                alt="prisma-logo"
+              />
+              <img
+                src="raon_logo.png"
+                class="w-[6.5rem]"
+                alt="raon-logo"
+              />
+            </div>
+          </div>
+          <!-- bibank -->
+          <div class="swiper-slide flex justify-center flex-col">
+            <div class="flex justify-center">
+              <img
+                src="bibank_logo.png"
+                class="flex justify-center w-32"
+              />
+            </div>
+
+            <div class="flex justify-center mt-5">
+              <p
+                class="flex flex-col justify-center text-[1.2rem] leading-[1.7rem] text-primary-700 font-[400] relative"
+              >
+                <img
+                  src="comillas-abre.png"
+                  class="absolute left-[14%] bottom-[20%] w-14"
+                  alt="comillas-01"
+                />
+                <span class="text-center mx-[17rem]"
+                  >Texto experiencia bibank pendiente a recibir para agregar.
+                </span>
+                <img
+                  src="comillas-cierre.png"
+                  class="absolute right-[14%] top-[20%] w-14"
+                  alt="comillas-02"
+                />
+              </p>
+            </div>
+            <div class="flex justify-center mt-7">
+              <p
+                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+              >
+                Gustavo Merlo, Bibank, Argentina
+              </p>
+            </div>
+            <div class="flex items-center justify-center gap-10 mt-16">
+              <img src="link_logo.png" class="w-14" alt="link-logo" />
+              <img
+                src="metrogas_logo.png"
+                class="w-[7.5rem]"
+                alt="metrogas-logo"
+              />
+              <img
+                src="prisma_logo.png"
+                class="w-[10.75rem]"
+                alt="prisma-logo"
+              />
+              <img
+                src="raon_logo.png"
+                class="w-[6.5rem]"
+                alt="raon-logo"
+              />
+            </div>
+          </div>
+          <!-- sudameris -->
+          <div class="swiper-slide flex justify-center flex-col">
+            <div class="flex justify-center">
+              <img
+                src="sudameris_logo.png"
+                class="flex justify-center w-60"
+              />
+            </div>
+
+            <div class="flex justify-center mt-5">
+              <p
+                class="flex flex-col justify-center text-[1.2rem] leading-[1.7rem] text-primary-700 font-[400] relative"
+              >
+                <img
+                  src="comillas-abre.png"
+                  class="absolute left-[14%] top-[-6%] w-14"
+                  alt="comillas-01"
+                />
+                <span class="text-center mx-[19rem]"
+                  >Trabajamos con Argón para diseñar una herramienta a medida
+                  para nuestros clientes con el objetivo de brindar una
+                  experiencia diferente y facilitar la operativa diaria.
+                </span>
+                <span class="text-center">
+                  Esta herramienta nos permite incorporar nuevas soluciones
+                  según demanda.
+                </span>
+                <img
+                  src="comillas-cierre.png"
+                  class="absolute right-[14%] bottom-[-8%] w-14"
+                  alt="comillas-02"
+                />
+              </p>
+            </div>
+            <div class="flex justify-center mt-7">
+              <p
+                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+              >
+                Dulce Ramirez, Sudameris, Paraguay
+              </p>
+            </div>
+            <div class="flex items-center justify-center gap-10 mt-16">
+              <img
+                src="bibank_logo.png"
+                class="w-36"
+                alt="bibank-logo"
+              />
+              <img
+                src="cencosud_logo.png"
+                class="w-[6.75rem]"
+                alt="cencosud-logo"
+              />
+              <img
+                src="galicia_logo.png"
+                class="w-[12.5rem]"
+                alt="galicia-logo"
+              />
+              <img src="lanus_logo.png" class="w-40" alt="lanus-logo" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OF CLIENTS -->
+    <!-- START IMAGE BANNER -->
+    <section class="relative">
+      <img src="banner-ppal.jpg" alt="" />
+      <div class="absolute right-16 bottom-14 flex flex-col gap-2">
+        <a
+          href=""
+          class="flex items-center justify-center w-[3.25rem] h-[3.25rem] rounded-full bg-secondary-600 text-white"
+        >
+          <span class="text-5xl font-[300]">+</span>
+        </a>
+      </div>
+    </section>
+    <!-- END IMAGE BANNER -->
+    <!-- START OF ARGON TEAM -->
+    <section class="bg-secondary-10 flex flex-col items-center pb-10 relative">
+      <div class="flex flex-col gap-7 items-center justify-center py-8">
+        <h2 class="text-[1.3rem] text-secondary-600 font-extrabold">
+          Equipo Argón
+        </h2>
+        <div
+          class="w-[29.5rem] lg:w-[26rem] xl:w-[36rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
+        ></div>
+      </div>
+      <div class="pt-2">
+        <p
+          class="flex flex-col items-center justify-center text-[1.1rem] text-primary-700 font-[400]"
+        >
+          <span class="text-center mx-64"
+            >Generamos productos que permiten resolver problemas de integración,
+            plataformas digitales y transaccionales con apoyo continuo a
+            nuestros clientes.
+          </span>
+        </p>
+      </div>
+      <div class="grid grid-cols-4 gap-12 mt-14">
+        <div class="flex flex-col items-center justify-center">
+          <img
+            src="allen_byn_1.png"
+            class="bg-white rounded-full w-[10.5rem]"
+            alt="argon-ceo"
+          />
+          <div class="flex flex-col items-center justify-center gap-2 mt-6">
+            <p
+              class="flex flex-col justify-center items-center text-primary-700 text-base leading-[0.75rem]"
+            >
+              <span class="font-extrabold">Lic. Ricardo Allen Geier</span>
+              <span class="text-secondary-600 text-base">CEO</span>
+            </p>
+            <a href="https://www.linkedin.com/in/ricardogeier/" target="_blank">
+              <img src="linkedin.png" class="w-7" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img
+            src="kari_byn_1.png"
+            class="bg-white rounded-full w-[10.5rem]"
+            alt="argon-directora-id"
+          />
+          <div class="flex flex-col items-center justify-center gap-2 mt-6">
+            <p
+              class="flex flex-col justify-center items-center text-primary-700 text-base leading-[0.75rem]"
+            >
+              <span class="font-extrabold">Mag. Karina G. Giusti</span>
+              <span class="text-secondary-600 text-base">Directora I+D</span>
+            </p>
+            <a
+              href="https://www.linkedin.com/in/lickarinaggiusti/"
+              target="_blank"
+            >
+              <img src="linkedin.png" class="w-7" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img
+            src="carlos_byn_1.png"
+            class="bg-white rounded-full w-[10.5rem]"
+            alt="argon-director-comercial"
+          />
+          <div class="flex flex-col items-center justify-center gap-2 mt-6">
+            <p
+              class="flex flex-col justify-center items-center text-primary-700 text-base leading-[0.75rem]"
+            >
+              <span class="font-extrabold">Lic. Carlos Campodonico</span>
+              <span class="text-secondary-600 text-base"
+                >Director Comercial</span
+              >
+            </p>
+            <a href="">
+              <img src="linkedin.png" class="w-7" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+          <img
+            src="gustavo_byn.png"
+            class="bg-white rounded-full w-[10.5rem]"
+            alt="argon-data-analyst"
+          />
+          <div class="flex flex-col items-center justify-center gap-2 mt-6">
+            <p
+              class="flex flex-col justify-center items-center text-primary-700 text-base leading-[0.75rem]"
+            >
+              <span class="font-extrabold">Ing. Gustavo M. Giusti</span>
+              <span class="text-secondary-600 text-base"
+                >Data Analyst Head</span
+              >
+            </p>
+            <a href="">
+              <img src="linkedin.png" class="w-7" alt="linkedin" />
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="absolute right-16 bottom-12 flex flex-col gap-2">
+        <a
+          href=""
+          class="flex items-center justify-center w-[3.25rem] h-[3.25rem] rounded-full bg-white text-secondary-600"
+        >
+          <span class="text-5xl font-[300]">+</span>
+        </a>
+      </div>
+    </section>
+    <!-- END OF ARGON TEAM -->
+    <!-- START NEWS -->
+    <section class="py-7">
+      <div class="flex flex-col gap-6 items-center justify-center pb-7">
+        <h2 class="text-[1.35rem] text-secondary-600 font-extrabold">News</h2>
+        <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"></div>
+      </div>
+      <div class="grid grid-cols-2 gap-9 mt-5 mx-16">
+        <div class="flex flex-col bg-gray-200 px-6 py-9 relative">
+          <div class="flex flex-col">
+            <p class="text-secondary-600 font-extrabold text-3xl">
+              Noticia No.1
+            </p>
+            <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
+          </div>
+          <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
+          <div class="absolute right-9 bottom-44 flex flex-col gap-2">
+            <a
+              href=""
+              class="flex items-center justify-center w-7 h-7 rounded-full bg-secondary-600 text-white"
+            >
+              <span class="text-3xl font-[300]">+</span>
+            </a>
+          </div>
+          <div class="flex gap-6">
+            <p class="text-secondary-600 font-extrabold text-base">06/12/23</p>
+            <div class="flex flex-col gap-3">
+              <p
+                class="text-primary-700 font-extrabold text-base leading-[1.15]"
+              >
+                La asunción de Javier Milei: los detalles del paquete de
+                reformas que enviarán al Congreso
+              </p>
+              <p class="text-primary-700 font-[400] text-xs leading-tight">
+                Cómo serán las leyes para recortar gastos, reformas impositivas,
+                laborales, entre otras. El elegido por el nuevo Presidente para
+                presidir el Senado reveló que el lunes enviarán el ambicioso
+                plan de reformas al Congreso.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-col bg-gray-200 px-6 py-9 relative">
+          <div class="flex flex-col">
+            <p class="text-secondary-600 font-extrabold text-3xl">
+              Noticia No.2
+            </p>
+            <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
+          </div>
+          <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
+          <div class="absolute right-9 bottom-44 flex flex-col gap-2">
+            <a
+              href=""
+              class="flex items-center justify-center w-7 h-7 rounded-full bg-secondary-600 text-white"
+            >
+              <span class="text-3xl font-[300]">+</span>
+            </a>
+          </div>
+          <div class="flex gap-6">
+            <p class="text-secondary-600 font-extrabold text-base">06/12/23</p>
+            <div class="flex flex-col gap-3">
+              <p
+                class="text-primary-700 font-extrabold text-base leading-[1.15]"
+              >
+                La asunción de Javier Milei: los detalles del paquete de
+                reformas que enviarán al Congreso
+              </p>
+              <p class="text-primary-700 font-[400] text-xs leading-tight">
+                Cómo serán las leyes para recortar gastos, reformas impositivas,
+                laborales, entre otras. El elegido por el nuevo Presidente para
+                presidir el Senado reveló que el lunes enviarán el ambicioso
+                plan de reformas al Congreso.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END NEWS -->
+    <!-- START FOOTER -->
+    <footer class="bg-primary-700 flex flex-col text-white py-4 pb-8">
+      <a href="/">
+        <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
+      </a>
+      <div class="flex items-start justify-between mx-16">
+        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+          <div class="flex flex-col">
+            <div class="">
+              <ul>
+                <li class="text-sm font-[600]">Soporte y Contacto</li>
+                <li>+54 9 11 XXXX XXXX</li>
+                <li>
+                  <a href="mailto:info@argonglobal.tech"
+                    >info@argonglobal.tech</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="">
+              <ul>
+                <li class="text-sm font-[600]">Navegación</li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
+                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li><a href="equipo-argon.html">Equipo Argón</a></li>
+                <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
+                <li><a href="#">Campus Argón</a></li>
+                <li><a href="news.html">News</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li class="text-sm font-[600]">Contactate con nosotros</li>
+            <li>
+              <div class="flex items-center gap-3">
+                <a href="mailto:info@argonglobal.tech">
+                  <img src="mail-icon.png" class="w-[2.15rem]" alt="" />
+                </a>
+                <a
+                  href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
+                >
+                  <img
+                    src="linkedin-logo.png"
+                    class="w-[2.1rem]"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: "Manrope, sans-serif",
+            },
+            colors: {
+              primary: {
+                700: "#061433",
+              },
+              secondary: {
+                10: "rgba(23, 84, 254, 0.15)",
+                50: "rgba(23, 84, 254, 0.4)",
+                100: "rgba(23, 84, 254, 0.6)",
+                500: "rgba(23, 84, 254, 0.8)",
+                600: "#1754fe",
+              },
+              secOrange: {
+                600: "#F88125",
+              },
+            },
+            backgroundImage: {
+              "home-01": "url('home_argon-01.jpg')",
+              "home-02": "url('home_argon-02.jpg')",
+              "home-03": "url('home_argon-03.jpg')",
+              "home-04": "url('home_argon-04.jpg')",
+              "home-05": "url('banner-ppal.jpg')",
+            },
+          },
+        },
+      };
+
+      // Phrases slider 1
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        // effect: "fade",
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+
+      // Client slider
+      var swiper = new Swiper(".clientSwiper", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        autoplay: {
+          delay: 3500,
+          disableOnInteraction: false,
+        },
+      });
+
+      // MENU NAVBAR
+      const btn = document.querySelector("button.menu-btn");
+      const menu = document.querySelector(".menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>

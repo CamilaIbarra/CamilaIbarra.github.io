@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>Argon - Habla con Argón</title>
+
+    <link rel="icon" href="icono-positivo.png" type="image/x-icon" />
+
+    <!-- Manrope font google -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Link Swiper's CSS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    />
+
+    <!-- Font Awesome -->
+    <script
+      src="https://kit.fontawesome.com/7de6ab665e.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+
+  <body class="font-manrope appearance-none">
+    <!-- START OF NAVBAR -->
+    <nav
+      class="w-full flex justify-between items-start px-11 bg-navbar bg-cover bg-no-repeat"
+    >
+      <a href="/">
+        <img
+          class="w-80"
+          src="logo_argon_sin_fondo_texto_blanco.png"
+          alt="logo-argon"
+        />
+      </a>
+      <div class="pt-16 flex flex-col">
+        <div class="flex items-center gap-3 mr-3">
+          <div class="flex items-center">
+            <div class="relative">
+              <input
+                type="search"
+                class="appearance-none bg-transparent rounded-2xl h-[1.45rem] w-[8.5rem] border border-white focus:outline-none focus:text-white focus:pl-8"
+                name="search-bar"
+                id="search-bar"
+              />
+              <img
+                src="search-icon.png"
+                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                alt=""
+              />
+            </div>
+          </div>
+          <button type="button" class="menu-btn focus:outline-none">
+            <img src="menu-icon.png" class="w-8" alt="">
+          </button>
+        </div>
+        <div class="menu hidden text-end">
+          <div
+            class="flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
+          >
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="productos-y-servicios.html"
+              >Productos & servicios</a
+            >
+            <a href="stack-tecnologico.html">Stack tecnológico</a>
+            <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
+            <a href="equipo-argon.html">Equipo Argón</a>
+            <a href="habla-con-argon.html">Hablá con Argón</a>
+            <a href="">Campus Argón</a>
+            <a href="news.html">News</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+    <div class="">
+      <section class="bg-secondary-10 text-primary-700 py-10 px-20">
+        <div class="flex flex-col gap-10">
+          <h3 class="text-2xl font-extrabold">Contacto</h3>
+        </div>
+        <div class="flex justify-between pt-8 pb-12 relative">
+          <form action="" method="POST">
+            <div class="flex flex-col gap-8">
+              <h3 class="text-secondary-600 text-3xl font-extrabold">
+                Hablá con Argón
+              </h3>
+              <div class="grid grid-cols-2 gap-5">
+                <input
+                  type="text"
+                  name="name"
+                  class="outline-none bg-white text-base px-2 py-0.5 w-72 font-[500] placeholder:text-primary-700 placeholder:text-base placeholder:font-[500]"
+                  placeholder="Nombre"
+                />
+                <input
+                  type="text"
+                  name="company"
+                  class="outline-none bg-white text-base px-2 py-0.5 w-72 font-[500] placeholder:text-primary-700 placeholder:text-base placeholder:font-[500]"
+                  placeholder="Empresa"
+                />
+                <input
+                  type="text"
+                  name="phone"
+                  class="outline-none bg-white text-base px-2 py-0.5 w-72 font-[500] placeholder:text-primary-700 placeholder:text-base placeholder:font-[500]"
+                  placeholder="Teléfono"
+                />
+                <input
+                  type="email"
+                  name="email"
+                  class="outline-none bg-white text-base px-2 py-0.5 w-72 font-[500] placeholder:text-primary-700 placeholder:text-base placeholder:font-[500]"
+                  placeholder="E-mail"
+                />
+                <input
+                  type="text"
+                  name="country"
+                  class="outline-none bg-white text-base px-2 py-0.5 w-72 font-[500] placeholder:text-primary-700 placeholder:text-base placeholder:font-[500]"
+                  placeholder="País"
+                />
+                <input
+                  type="text"
+                  name="motive"
+                  class="outline-none bg-white text-base px-2 py-0.5 w-72 font-[500] placeholder:text-primary-700 placeholder:text-base placeholder:font-[500]"
+                  placeholder="Motivo"
+                />
+              </div>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="6"
+                class="outline-none bg-white text-base px-2 py-0.5 w-72 font-[500] placeholder:text-primary-700 placeholder:text-base placeholder:font-[500] w-full"
+                placeholder="Mensaje"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="bg-secondary-600 rounded-xl px-5 absolute bottom-0"
+            >
+              <span class="uppercase text-white text-base font-[500]"
+                >Enviar</span
+              >
+            </button>
+          </form>
+          <img
+            src="form_foto.png"
+            class="w-[27rem]"
+            alt=""
+          />
+        </div>
+      </section>
+    </div>
+    <!-- START FOOTER -->
+    <footer class="bg-primary-700 flex flex-col text-white py-4 pb-8">
+      <a href="/">
+        <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
+      </a>
+      <div class="flex items-start justify-between mx-16">
+        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+          <div class="flex flex-col">
+            <div class="">
+              <ul>
+                <li class="text-sm font-[600]">Soporte y Contacto</li>
+                <li>+54 9 11 XXXX XXXX</li>
+                <li>
+                  <a href="mailto:info@argonglobal.tech"
+                    >info@argonglobal.tech</a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="flex flex-col">
+            <div class="">
+              <ul>
+                <li class="text-sm font-[600]">Navegación</li>
+                <li><a href="quienes-somos.html">Quiénes somos</a></li>
+                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
+                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li><a href="equipo-argon.html">Equipo Argón</a></li>
+                <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
+                <li><a href="#">Campus Argón</a></li>
+                <li><a href="news.html">News</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div>
+          <ul>
+            <li class="text-sm font-[600]">Contactate con nosotros</li>
+            <li>
+              <div class="flex items-center gap-3">
+                <a href="mailto:info@argonglobal.tech">
+                  <img src="mail-icon.png" class="w-[2.15rem]" alt="" />
+                </a>
+                <a
+                  href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
+                >
+                  <img
+                    src="linkedin-logo.png"
+                    class="w-[2.1rem]"
+                    alt=""
+                  />
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+    <!-- END FOOTER -->
+
+    <!-- jquery cdn -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!-- swiper cdn -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              manrope: "Manrope, sans-serif",
+            },
+            colors: {
+              primary: {
+                700: "#061433",
+              },
+              secondary: {
+                10: "rgba(23, 84, 254, 0.15)",
+                50: "rgba(23, 84, 254, 0.4)",
+                100: "rgba(23, 84, 254, 0.6)",
+                500: "rgba(23, 84, 254, 0.8)",
+                600: "#1754fe",
+              },
+              secOrange: {
+                600: "#F88125",
+              },
+            },
+            backgroundImage: {
+              navbar: "url('navbar-background.jpg')",
+            },
+          },
+        },
+      };
+
+      // MENU NAVBAR
+      const btn = document.querySelector("button.menu-btn");
+      const menu = document.querySelector(".menu");
+
+      btn.addEventListener("click", () => {
+        menu.classList.toggle("hidden");
+      });
+    </script>
+  </body>
+</html>
