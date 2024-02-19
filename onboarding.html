@@ -51,24 +51,61 @@
       .swiper-pagination-bullet-active {
         background-color: #1754fe;
       }
+
+      @media (max-width: 1024px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: 0;
+          left: 2.75rem;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 4.65rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 4.75rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 2.25rem;
+        }
+      }
     </style>
   </head>
 
   <body class="font-manrope appearance-none">
     <!-- START OF NAVBAR -->
     <nav
-      class="w-full flex justify-between items-start px-11 bg-navbar bg-cover bg-no-repeat"
+      class="w-full flex justify-center md:justify-between items-center md:items-start md:px-11 bg-primary-700 md:bg-navbar md:bg-cover md:bg-no-repeat"
     >
       <a href="/">
         <img
-          class="w-80"
+          class="w-72 md:w-80"
           src="logo_argon_sin_fondo_texto_blanco.png"
           alt="logo-argon"
         />
       </a>
-      <div class="pt-16 flex flex-col">
+      <div class="md:pt-16 flex flex-col">
         <div class="flex items-center gap-3 mr-3">
-          <div class="flex items-center">
+          <div class="hidden md:flex items-center">
             <div class="relative">
               <input
                 type="search"
@@ -78,23 +115,21 @@
               />
               <img
                 src="search-icon.png"
-                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                class="w-[1.35rem] md:[1.1rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1 md:top-[0.15rem]"
                 alt=""
               />
             </div>
           </div>
           <button type="button" class="menu-btn focus:outline-none">
-            <img src="menu-icon.png" class="w-8" alt="">
+            <img src="menu-icon.png" class="w-8" alt="" />
           </button>
         </div>
         <div class="menu hidden text-end">
           <div
-            class="flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
+            class="hidden md:flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
           >
             <a href="quienes-somos.html">Quiénes somos</a>
-            <a href="productos-y-servicios.html"
-              >Productos & servicios</a
-            >
+            <a href="productos-y-servicios.html">Productos & servicios</a>
             <a href="stack-tecnologico.html">Stack tecnológico</a>
             <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
             <a href="equipo-argon.html">Equipo Argón</a>
@@ -102,24 +137,70 @@
             <a href="">Campus Argón</a>
             <a href="news.html">News</a>
           </div>
+          <div
+            class="absolute right-0 top-[10.1rem] flex flex-col text-white font-[300] text-sm md:hidden"
+          >
+            <a
+              href="quienes-somos.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Quiénes somos</a
+            >
+            <a
+              href="productos-y-servicios.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Productos & servicios</a
+            >
+            <a
+              href="stack-tecnologico.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Stack tecnológico</a
+            >
+            <a
+              href="clientes-y-experiencias.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Clientes & experiencias</a
+            >
+            <a
+              href="equipo-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Equipo Argón</a
+            >
+            <a
+              href="habla-con-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Hablá con Argón</a
+            >
+            <a href="" class="p-4 bg-primary-700 border border-white"
+              >Campus Argón</a
+            >
+            <a href="news.html" class="p-4 bg-primary-700 border border-white"
+              >News</a
+            >
+          </div>
         </div>
       </div>
     </nav>
     <!-- END OF NAVBAR -->
     <div class="">
-      <section class="text-primary-700 pt-8 pb-16 px-20">
+      <section
+        class="text-primary-700 pt-8 pb-16 px-10 md:px-20 lg:px-12 xl:px-20"
+      >
         <h3 class="text-[1.35rem] font-bold">Tech</h3>
-        <div class="flex justify-center pt-6">
+        <div
+          class="flex justify-center pt-6 flex-col lg:flex-row gap-8 lg:gap-4 xl:gap-0"
+        >
           <div>
             <div class="flex flex-col text-secondary-600 font-[300] pb-3">
               <h2
-                class="text-3xl leading-snug text-secondary-600 font-extrabold"
+                class="text-3xl lg:text-2xl xl:text-3xl leading-snug text-secondary-600 font-extrabold"
               >
                 Onboarding
               </h2>
-              <p class="flex flex-col text-4xl leading-snug text-secondary-600">
+              <p
+                class="flex flex-col text-3xl lg:text-2xl xl:text-3xl leading-snug text-secondary-600"
+              >
                 <span>Con nuestra API de ONBOARDING digital,</span>
-                <span class="pr-4">
+                <span class="xl:pr-4">
                   tus clientes potenciales podrán abrir su cuenta o adquirir
                   productos de forma simple y en minutos
                 </span>
@@ -129,13 +210,13 @@
               <h3 class="text-base font-extrabold pt-5 pb-1">
                 ¿Qué es el servicio onboarding?
               </h3>
-              <p class="pr-12">
+              <p class="xl:pr-12">
                 Se trata de una solución tecnológica diseñada para simplificar y
                 agilizar el proceso de incorporación de usuarios o clientes a
                 plataformas digitales, pudiendo estos ser clientes individuos o
                 empresas.
               </p>
-              <p class="pr-28">
+              <p class="xl:pr-28">
                 Ofrece: una interfaz gráfica simple e intuitiva para renderizar
                 en front-end, flujo y código de programación consumibles vía API
                 e integración ágil y simple al ERP del cliente.
@@ -165,7 +246,7 @@
                 <span class="font-bold">-></span> Experiencia de usuario
                 optimizada y simplificada
               </p>
-              <p class="pr-8">
+              <p class="xl:pr-8">
                 <span class="font-bold">-></span> Generación de file digital,
                 persistiendo la información en tablas, Base64 (imágenes) y
                 documentos en PDF
@@ -188,27 +269,27 @@
       >
         <div class="swiper mySwiper py-8">
           <div class="swiper-wrapper">
-            <div class="swiper-slide px-20">
+            <div class="swiper-slide px-10 md:px-20 lg:px-12 xl:px-20">
               <p>Automatiza tareas manuales reduciendo los tiempos de espera</p>
             </div>
-            <div class="swiper-slide px-20">
+            <div class="swiper-slide px-10 md:px-20 lg:px-12 xl:px-20">
               <p>
                 Reduce los costos asociados al proceso de onboarding tradicional
               </p>
             </div>
-            <div class="swiper-slide px-20">
+            <div class="swiper-slide px-10 md:px-20 lg:px-12 xl:px-20">
               <p>
                 Seguridad mejorada: verifica la autenticidad de los documentos y
                 la identidad
               </p>
             </div>
-            <div class="swiper-slide px-20">
+            <div class="swiper-slide px-10 md:px-20 lg:px-12 xl:px-20">
               <p>
                 Minimiza los riesgos de fraude, maximiza la satisfacción de los
                 clientes
               </p>
             </div>
-            <div class="swiper-slide px-20">
+            <div class="swiper-slide px-10 md:px-20 lg:px-12 xl:px-20">
               <p>
                 Adaptabilidad y escalabilidad: es adaptable a diversas
                 industrias y escenarios
@@ -223,7 +304,9 @@
           <div class="mb-6">
             <h3 class="text-base font-extrabold">Alcance de la solución</h3>
           </div>
-          <div class="flex items-center gap-16 text-white text-lg">
+          <div
+            class="flex items-center lg:gap-16 text-white text-lg flex-col lg:flex-row"
+          >
             <div
               class="bg-[url('/onboarding-icons-1.jpg')] bg-contain bg-no-repeat"
             >
@@ -264,14 +347,16 @@
           </div>
         </div>
         <!-- falta video de onboarding -->
-        <div class="flex items-center justify-center px-48">
+        <div
+          class="hidden flex items-center justify-center px-11 md:px-20 xl:px-48"
+        >
           <video width="1280" controls>
-            <source src="videos/lending.mp4" type="video/mp4" />
+            <source src="lending.mp4" type="video/mp4" />
           </video>
         </div>
       </section>
       <div
-        class="flex items-center justify-center gap-10 py-16 bg-secondary-600"
+        class="flex items-center justify-center gap-10 py-16 bg-secondary-600 flex-col md:flex-row"
       >
         <a
           href=""
@@ -310,8 +395,12 @@
       <a href="/">
         <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
       </a>
-      <div class="flex items-start justify-between mx-16">
-        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+      <div
+        class="flex items-start justify-between mx-16 flex-col md:flex-row gap-8 md:gap-0"
+      >
+        <div
+          class="flex gap-8 md:gap-36 text-xs font-[200] leading-[1.15rem] flex-col md:flex-row"
+        >
           <div class="flex flex-col">
             <div class="">
               <ul>
@@ -330,9 +419,15 @@
               <ul>
                 <li class="text-sm font-[600]">Navegación</li>
                 <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li>
+                  <a href="productos-y-servicios.html">Productos & servicios</a>
+                </li>
                 <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
-                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li>
+                  <a href="clientes-y-experiencias.html"
+                    >Clientes & experiencias</a
+                  >
+                </li>
                 <li><a href="equipo-argon.html">Equipo Argón</a></li>
                 <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
                 <li><a href="#">Campus Argón</a></li>
@@ -352,11 +447,7 @@
                 <a
                   href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
                 >
-                  <img
-                    src="linkedin-logo.png"
-                    class="w-[2.1rem]"
-                    alt=""
-                  />
+                  <img src="linkedin-logo.png" class="w-[2.1rem]" alt="" />
                 </a>
               </div>
             </li>
@@ -411,7 +502,7 @@
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         autoplay: {
-          delay: 3500,
+          delay: 8000,
           disableOnInteraction: false,
         },
         pagination: {

@@ -35,18 +35,18 @@
   <body class="font-manrope appearance-none">
     <!-- START OF NAVBAR -->
     <nav
-      class="w-full flex justify-between items-start px-11 bg-navbar bg-cover bg-no-repeat"
+      class="w-full flex justify-center md:justify-between items-center md:items-start md:px-11 bg-primary-700 md:bg-navbar md:bg-cover md:bg-no-repeat"
     >
       <a href="/">
         <img
-          class="w-80"
+          class="w-72 md:w-80"
           src="logo_argon_sin_fondo_texto_blanco.png"
           alt="logo-argon"
         />
       </a>
-      <div class="pt-16 flex flex-col">
+      <div class="md:pt-16 flex flex-col">
         <div class="flex items-center gap-3 mr-3">
-          <div class="flex items-center">
+          <div class="hidden md:flex items-center">
             <div class="relative">
               <input
                 type="search"
@@ -56,18 +56,18 @@
               />
               <img
                 src="search-icon.png"
-                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                class="w-[1.35rem] md:[1.1rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1 md:top-[0.15rem]"
                 alt=""
               />
             </div>
           </div>
           <button type="button" class="menu-btn focus:outline-none">
-            <img src="menu-icon.png" class="w-8" alt="">
+            <img src="menu-icon.png" class="w-8" alt="" />
           </button>
         </div>
         <div class="menu hidden text-end">
           <div
-            class="flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
+            class="hidden md:flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
           >
             <a href="quienes-somos.html">Quiénes somos</a>
             <a href="productos-y-servicios.html">Productos & servicios</a>
@@ -77,6 +77,46 @@
             <a href="habla-con-argon.html">Hablá con Argón</a>
             <a href="">Campus Argón</a>
             <a href="news.html">News</a>
+          </div>
+          <div
+            class="absolute right-0 top-[10.1rem] flex flex-col text-white font-[300] text-sm md:hidden"
+          >
+            <a
+              href="quienes-somos.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Quiénes somos</a
+            >
+            <a
+              href="productos-y-servicios.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Productos & servicios</a
+            >
+            <a
+              href="stack-tecnologico.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Stack tecnológico</a
+            >
+            <a
+              href="clientes-y-experiencias.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Clientes & experiencias</a
+            >
+            <a
+              href="equipo-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Equipo Argón</a
+            >
+            <a
+              href="habla-con-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Hablá con Argón</a
+            >
+            <a href="" class="p-4 bg-primary-700 border border-white"
+              >Campus Argón</a
+            >
+            <a href="news.html" class="p-4 bg-primary-700 border border-white"
+              >News</a
+            >
           </div>
         </div>
       </div>
@@ -89,13 +129,15 @@
             <h2 class="text-[1.3rem] text-secondary-600 font-extrabold">
               Clientes & experiencias
             </h2>
-            <p class="text-[1.3rem] text-secondary-600 font-[300]">
+            <p
+              class="text-[1.3rem] md:px-20 lg:px-0 text-secondary-600 font-[300]"
+            >
               Durante estos años estuvimos generando experiencias y sumando
               vínculos sólidos
             </p>
           </div>
           <div
-            class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
+            class="w-72 md:w-96 xl:w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
           ></div>
         </div>
       </section>
@@ -103,7 +145,9 @@
         <div class="swiper clientSwiper">
           <div class="swiper-wrapper">
             <!-- yapstone -->
-            <div class="swiper-slide flex justify-center flex-col">
+            <div
+              class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+            >
               <div class="flex justify-center">
                 <img
                   src="yapstone_logo.png"
@@ -117,47 +161,49 @@
                 >
                   <img
                     src="comillas-abre.png"
-                    class="absolute left-[14%] top-[21%] w-14"
+                    class="hidden md:flex absolute md:left-0 md:top-[11%] xl:left-[14%] xl:top-[21%] w-14"
                     alt="comillas-01"
                   />
-                  <span class="text-center"
+                  <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-0"
                     >Yapstone needed integration with BIND for Argentina
                     payments immediately.
                   </span>
-                  <span class="text-center mx-80">
+                  <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-80">
                     Engaged with Allen Geier's team and they did a splendid job
                     to achieve this quickly. They were able to accommodate the
                     required changes instantly by going above and beyond.
                   </span>
-                  <span class="text-center">
+                  <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-0">
                     They also brought in their own project manager to manage the
                     team for free.
                   </span>
-                  <span class="text-center mx-96">
+                  <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-96">
                     Allen was great at communicating in English with us and
                     Spanish with BIND team as well.
                   </span>
-                  <span class="text-center">
+                  <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-0">
                     Thank you for all your support and helping us integrate with
                     BIND.
                   </span>
                   <img
                     src="comillas-cierre.png"
-                    class="absolute right-[14%] bottom-[21%] w-14"
+                    class="hidden md:flex absolute md:right-0 md:bottom-[11%] xl:right-[14%] xl:bottom-[21%] w-14"
                     alt="comillas-02"
                   />
                 </p>
               </div>
               <div class="flex justify-center mt-7">
                 <p
-                  class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                  class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
                 >
                   Neelima Brungi, IT Manager, USA
                 </p>
               </div>
             </div>
             <!-- avon -->
-            <div class="swiper-slide flex justify-center flex-col">
+            <div
+              class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+            >
               <div class="flex justify-center">
                 <img
                   src="avon_logo.png"
@@ -171,43 +217,45 @@
                 >
                   <img
                     src="comillas-abre.png"
-                    class="absolute left-[13%] top-[12%] w-14"
+                    class="hidden md:flex absolute md:left-0 md:top-[18%] xl:left-[13%] xl:top-[12%] w-14"
                     alt="comillas-01"
                   />
-                  <span class="text-center mx-56"
+                  <span class="text-center md:mx-20 lg:mx-16 xl:mx-56"
                     >Desde el año 2015, utilizamos a CentraldePagos y su
                     plataforma de sistemas como integrador de canales de pago en
                     efectivo y links de pago con tarjeta de débito.
                   </span>
-                  <span class="text-center">
+                  <span class="text-center md:mx-20 lg:mx-16 xl:mx-0">
                     Se procesan más de 300M transacciones mensuales en todos los
                     canales de pago.
                   </span>
-                  <span class="text-center mx-52">
+                  <span class="text-center md:mx-20 lg:mx-16 xl:mx-52">
                     Contamos con servicios webservice de notificaciones de pago
                     y conciliaciones de transacciones ad-hoc integrados a
                     nuestro ERP.
                   </span>
-                  <span class="text-center">
+                  <span class="text-center md:mx-20 lg:mx-16 xl:mx-0">
                     Nos prestan servicio y soporte a la operación.
                   </span>
                   <img
                     src="comillas-cierre.png"
-                    class="absolute right-[13%] bottom-[11%] w-14"
+                    class="hidden md:flex absolute md:right-0 md:bottom-[18%] xl:right-[13%] xl:bottom-[11%] w-14"
                     alt="comillas-02"
                   />
                 </p>
               </div>
               <div class="flex justify-center mt-7">
                 <p
-                  class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                  class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
                 >
                   Gabriel Marsilli, Cosméticos Avon SACIFI, Argentina
                 </p>
               </div>
             </div>
             <!-- natura -->
-            <div class="swiper-slide flex justify-center flex-col">
+            <div
+              class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+            >
               <div class="flex justify-center">
                 <img
                   src="LATAM - NATURA.png"
@@ -221,10 +269,10 @@
                 >
                   <img
                     src="comillas-abre.png"
-                    class="absolute left-[13%] top-[22%] w-14"
+                    class="hidden md:flex absolute md:left-0 md:top-[22%] xl:left-[13%] xl:top-[22%] w-14"
                     alt="comillas-01"
                   />
-                  <span class="text-center mx-64"
+                  <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-64"
                     >Utilizamos el Gateway de pago en efectivo de Consultora
                     Argon SRL de manera continua durante más de 4 años. Esta
                     solución tecnológica no solo se encarga de la última etapa
@@ -239,26 +287,25 @@
                   </span>
                   <img
                     src="comillas-cierre.png"
-                    class="absolute right-[13%] bottom-[21%] w-14"
+                    class="hidden md:flex absolute md:right-0 md:bottom-[22%] xl:right-[13%] xl:bottom-[21%] w-14"
                     alt="comillas-02"
                   />
                 </p>
               </div>
               <div class="flex justify-center mt-7">
                 <p
-                  class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                  class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
                 >
                   Fernanda Dominguez, IT, Natura&Co, Argentina
                 </p>
               </div>
             </div>
             <!-- adecash -->
-            <div class="swiper-slide flex justify-center flex-col">
+            <div
+              class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+            >
               <div class="flex justify-center">
-                <img
-                  src="adecash_logo.png"
-                  class="flex justify-center w-14"
-                />
+                <img src="adecash_logo.png" class="flex justify-center w-14" />
               </div>
 
               <div class="flex justify-center mt-5">
@@ -267,16 +314,18 @@
                 >
                   <img
                     src="comillas-abre.png"
-                    class="absolute left-[13%] top-[13%] w-14"
+                    class="hidden md:flex absolute md:left-0 md:top-[19%] xl:left-[13%] xl:top-[13%] w-14"
                     alt="comillas-01"
                   />
-                  <span class="text-center mx-64"
+                  <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-64"
                     >Mantuvimos una plática con el equipo de Argon, estábamos en
                     busca de una herramienta y gestionar préstamos de anticipo
                     de haberes a través de la nómina de los empleados. De ahí
                     surgió Adecash. Quiero expresar mi agradecimiento al equipo
                   </span>
-                  <span class="text-center mx-[18.5rem]">
+                  <span
+                    class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-[18.5rem]"
+                  >
                     de Argonglobal.tech; entendieron perfectamente lo que
                     necesitábamos y nos facilitaron todo el proceso, desde el
                     inicio del proyecto hasta la implementación del servicio.
@@ -284,26 +333,25 @@
                   </span>
                   <img
                     src="comillas-cierre.png"
-                    class="absolute right-[13%] bottom-[12%] w-14"
+                    class="hidden md:flex absolute md:right-0 md:bottom-[19%] xl:right-[13%] xl:bottom-[12%] w-14"
                     alt="comillas-02"
                   />
                 </p>
               </div>
               <div class="flex justify-center mt-7">
                 <p
-                  class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                  class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
                 >
                   José Antonio Klimos, Adecash, México
                 </p>
               </div>
             </div>
             <!-- bibank -->
-            <div class="swiper-slide flex justify-center flex-col">
+            <div
+              class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+            >
               <div class="flex justify-center">
-                <img
-                  src="bibank_logo.png"
-                  class="flex justify-center w-32"
-                />
+                <img src="bibank_logo.png" class="flex justify-center w-32" />
               </div>
 
               <div class="flex justify-center mt-5">
@@ -312,29 +360,32 @@
                 >
                   <img
                     src="comillas-abre.png"
-                    class="absolute left-[14%] bottom-[20%] w-14"
+                    class="hidden md:flex absolute md:left-0 xl:left-[14%] xl:bottom-[20%] w-14"
                     alt="comillas-01"
                   />
-                  <span class="text-center mx-[17rem]"
+                  <span
+                    class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-[17rem]"
                     >Texto experiencia bibank pendiente a recibir para agregar.
                   </span>
                   <img
                     src="comillas-cierre.png"
-                    class="absolute right-[14%] top-[20%] w-14"
+                    class="hidden md:flex absolute md:right-0 xl:right-[14%] xl:top-[20%] w-14"
                     alt="comillas-02"
                   />
                 </p>
               </div>
               <div class="flex justify-center mt-7">
                 <p
-                  class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                  class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
                 >
                   Gustavo Merlo, Bibank, Argentina
                 </p>
               </div>
             </div>
             <!-- sudameris -->
-            <div class="swiper-slide flex justify-center flex-col">
+            <div
+              class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+            >
               <div class="flex justify-center">
                 <img
                   src="sudameris_logo.png"
@@ -348,28 +399,29 @@
                 >
                   <img
                     src="comillas-abre.png"
-                    class="absolute left-[14%] top-[-6%] w-14"
+                    class="hidden md:flex absolute md:left-0 md:top-[13%] xl:left-[14%] xl:top-[-6%] w-14"
                     alt="comillas-01"
                   />
-                  <span class="text-center mx-[19rem]"
+                  <span
+                    class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-[19rem]"
                     >Trabajamos con Argón para diseñar una herramienta a medida
                     para nuestros clientes con el objetivo de brindar una
                     experiencia diferente y facilitar la operativa diaria.
                   </span>
-                  <span class="text-center">
+                  <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-0">
                     Esta herramienta nos permite incorporar nuevas soluciones
                     según demanda.
                   </span>
                   <img
                     src="comillas-cierre.png"
-                    class="absolute right-[14%] bottom-[-8%] w-14"
+                    class="hidden md:flex absolute md:right-0 md:bottom-[13%] xl:right-[14%] xl:bottom-[-8%] w-14"
                     alt="comillas-02"
                   />
                 </p>
               </div>
               <div class="flex justify-center mt-7">
                 <p
-                  class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                  class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
                 >
                   Dulce Ramirez, Sudameris, Paraguay
                 </p>
@@ -387,8 +439,12 @@
       <a href="/">
         <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
       </a>
-      <div class="flex items-start justify-between mx-16">
-        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+      <div
+        class="flex items-start justify-between mx-16 flex-col md:flex-row gap-8 md:gap-0"
+      >
+        <div
+          class="flex gap-8 md:gap-36 text-xs font-[200] leading-[1.15rem] flex-col md:flex-row"
+        >
           <div class="flex flex-col">
             <div class="">
               <ul>
@@ -407,9 +463,15 @@
               <ul>
                 <li class="text-sm font-[600]">Navegación</li>
                 <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li>
+                  <a href="productos-y-servicios.html">Productos & servicios</a>
+                </li>
                 <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
-                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li>
+                  <a href="clientes-y-experiencias.html"
+                    >Clientes & experiencias</a
+                  >
+                </li>
                 <li><a href="equipo-argon.html">Equipo Argón</a></li>
                 <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
                 <li><a href="#">Campus Argón</a></li>
@@ -429,11 +491,7 @@
                 <a
                   href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
                 >
-                  <img
-                    src="linkedin-logo.png"
-                    class="w-[2.1rem]"
-                    alt=""
-                  />
+                  <img src="linkedin-logo.png" class="w-[2.1rem]" alt="" />
                 </a>
               </div>
             </li>
@@ -488,8 +546,8 @@
         slidesPerView: 1,
         spaceBetween: 30,
         autoplay: {
-            delay: 3500,
-            disableOnInteraction: false,
+          delay: 8000,
+          disableOnInteraction: false,
         },
       });
     </script>

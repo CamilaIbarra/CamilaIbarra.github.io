@@ -51,24 +51,61 @@
       .swiper-pagination-bullet-active {
         background-color: #1754fe;
       }
+
+      @media (max-width: 1024px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: 0;
+          left: 4.75rem;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 4.65rem;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 4.75rem;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 2.25rem;
+        }
+      }
     </style>
   </head>
 
   <body class="font-manrope appearance-none">
     <!-- START OF NAVBAR -->
     <nav
-      class="w-full flex justify-between items-start px-11 bg-navbar bg-cover bg-no-repeat"
+      class="w-full flex justify-center md:justify-between items-center md:items-start md:px-11 bg-primary-700 md:bg-navbar md:bg-cover md:bg-no-repeat"
     >
       <a href="/">
         <img
-          class="w-80"
+          class="w-72 md:w-80"
           src="logo_argon_sin_fondo_texto_blanco.png"
           alt="logo-argon"
         />
       </a>
-      <div class="pt-16 flex flex-col">
+      <div class="md:pt-16 flex flex-col">
         <div class="flex items-center gap-3 mr-3">
-          <div class="flex items-center">
+          <div class="hidden md:flex items-center">
             <div class="relative">
               <input
                 type="search"
@@ -78,23 +115,21 @@
               />
               <img
                 src="search-icon.png"
-                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                class="w-[1.35rem] md:[1.1rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1 md:top-[0.15rem]"
                 alt=""
               />
             </div>
           </div>
           <button type="button" class="menu-btn focus:outline-none">
-            <img src="menu-icon.png" class="w-8" alt="">
+            <img src="menu-icon.png" class="w-8" alt="" />
           </button>
         </div>
         <div class="menu hidden text-end">
           <div
-            class="flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
+            class="hidden md:flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
           >
             <a href="quienes-somos.html">Quiénes somos</a>
-            <a href="productos-y-servicios.html"
-              >Productos & servicios</a
-            >
+            <a href="productos-y-servicios.html">Productos & servicios</a>
             <a href="stack-tecnologico.html">Stack tecnológico</a>
             <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
             <a href="equipo-argon.html">Equipo Argón</a>
@@ -102,14 +137,54 @@
             <a href="">Campus Argón</a>
             <a href="news.html">News</a>
           </div>
+          <div
+            class="absolute right-0 top-[10.1rem] flex flex-col text-white font-[300] text-sm md:hidden"
+          >
+            <a
+              href="quienes-somos.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Quiénes somos</a
+            >
+            <a
+              href="productos-y-servicios.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Productos & servicios</a
+            >
+            <a
+              href="stack-tecnologico.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Stack tecnológico</a
+            >
+            <a
+              href="clientes-y-experiencias.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Clientes & experiencias</a
+            >
+            <a
+              href="equipo-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Equipo Argón</a
+            >
+            <a
+              href="habla-con-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Hablá con Argón</a
+            >
+            <a href="" class="p-4 bg-primary-700 border border-white"
+              >Campus Argón</a
+            >
+            <a href="news.html" class="p-4 bg-primary-700 border border-white"
+              >News</a
+            >
+          </div>
         </div>
       </div>
     </nav>
     <!-- END OF NAVBAR -->
     <div class="">
-      <section class="text-primary-700 pt-8 pb-16 px-20">
+      <section class="text-primary-700 pt-8 pb-16 px-10 md:px-20">
         <h3 class="text-[1.35rem] font-bold">Inclusion</h3>
-        <div class="flex justify-center">
+        <div class="flex justify-center gap-8 xl:gap-0 flex-col lg:flex-row">
           <div>
             <div class="flex flex-col text-secondary-600 font-[500]">
               <div class="mb-3">
@@ -120,20 +195,24 @@
               <p class="text-[1.35rem]">
                 Todo lo que necesitás para tu Pyme en un solo lugar.
               </p>
-              <p class="text-[1.35rem] leading-relaxed flex flex-col pr-24">
+              <p class="text-[1.35rem] leading-relaxed flex flex-col xl:pr-24">
                 <span
                   >Punto Pyme es un ECOSISTEMA único de interacción y formación
                   que potencia el desarrollo económico y profesional con
                   servicios simples y accesibles para las mipymes.</span
                 >
               </p>
-              <p class="text-[1.35rem] leading-relaxed flex flex-col pr-44">
+              <p class="text-[1.35rem] leading-relaxed flex flex-col xl:pr-44">
                 Una plataforma dirigida a estimular el uso de tecnología y el
                 crecimiento económico.
               </p>
             </div>
           </div>
-          <img src="puntopyme_foto.jpg" class="w-[21.5rem]" alt="" />
+          <img
+            src="puntopyme_foto.jpg"
+            class="w-[21.5rem]"
+            alt=""
+          />
         </div>
       </section>
       <section
@@ -141,13 +220,13 @@
       >
         <div class="swiper mySwiper py-8">
           <div class="swiper-wrapper">
-            <div class="swiper-slide px-20">
+            <div class="swiper-slide px-10 md:px-20">
               <p>Desarrollo económico</p>
             </div>
-            <div class="swiper-slide px-20">
+            <div class="swiper-slide px-10 md:px-20">
               <p>Desarrollo profesional</p>
             </div>
-            <div class="swiper-slide px-20">
+            <div class="swiper-slide px-10 md:px-20">
               <p>Un nuevo futuro posible</p>
             </div>
           </div>
@@ -160,17 +239,21 @@
             <h3 class="text-base font-extrabold">Alcance de la solución</h3>
             <h3 class="text-base font-[400]">En el portal podrás encontrar:</h3>
           </div>
-          <div class="flex items-center gap-8 text-white text-lg pt-6">
+          <div
+            class="flex items-center gap-8 text-white text-base md:text-lg pt-6 flex-col lg:flex-row"
+          >
             <div
               class="bg-[url('/punto-icons-1.jpg')] bg-contain bg-no-repeat"
             >
               <div
-                class="flex flex-col justify-center gap-5 w-[26.5rem] h-[18.5rem] px-5 pt-10"
+                class="flex flex-col justify-center gap-5 w-[20.5rem] h-[14.5rem] md:w-[26.5rem] md:h-[18.5rem] px-5 pt-12 md:pt-10"
               >
                 <p class="font-bold leading-tight">
                   Servicios para las MiPymes.
                 </p>
-                <p class="flex flex-col text-lg font-[200] leading-tight">
+                <p
+                  class="flex flex-col text-base md:text-lg font-[200] leading-tight"
+                >
                   <span
                     >Registración de la actividad y marco contable, gestión de
                     recursos humanos, administración de punto de venta,
@@ -183,12 +266,14 @@
               class="bg-[url('/punto-icons-2.jpg')] bg-contain bg-no-repeat"
             >
               <div
-                class="flex flex-col justify-center gap-5 w-[26.5rem] h-[18.5rem] px-5 pt-3"
+                class="flex flex-col justify-center gap-5 w-[20.5rem] h-[14.5rem] md:w-[26.5rem] md:h-[18.5rem] px-5 pt-3"
               >
                 <p class="font-bold leading-tight">
                   Academia Pyme - Campus Digital.
                 </p>
-                <p class="flex flex-col text-lg font-[200] leading-tight">
+                <p
+                  class="flex flex-col text-base md:text-lg font-[200] leading-tight"
+                >
                   <span
                     >Academia en línea. Marketing digital, comunicación,
                     planificación, programación y mucho más.
@@ -197,15 +282,19 @@
               </div>
             </div>
           </div>
-          <div class="flex items-center gap-8 text-white text-lg py-6">
+          <div
+            class="flex items-center gap-8 text-white text-base md:text-lg py-6 flex-col lg:flex-row"
+          >
             <div
               class="bg-[url('/punto-icons-3.jpg')] bg-contain bg-no-repeat"
             >
               <div
-                class="flex flex-col justify-center gap-5 w-[26.5rem] h-[18.5rem] px-5 pt-5"
+                class="flex flex-col justify-center gap-5 w-[20.5rem] h-[14.5rem] md:w-[26.5rem] md:h-[18.5rem] px-5 pt-5"
               >
                 <p class="font-bold leading-tight mr-24">Novedades.</p>
-                <p class="flex flex-col text-lg font-[200] leading-tight">
+                <p
+                  class="flex flex-col text-base md:text-lg font-[200] leading-tight"
+                >
                   <span
                     >Todo lo que necesitas saber sobre novedades de la
                     actividad, normativa, nuevas tendencias y productos.</span
@@ -217,12 +306,14 @@
               class="bg-[url('/punto-icons-4.jpg')] bg-contain bg-no-repeat"
             >
               <div
-                class="flex flex-col justify-center gap-5 w-[26.5rem] h-[18.5rem] px-5 pt-16"
+                class="flex flex-col justify-center gap-5 w-[20.5rem] h-[14.5rem] md:w-[26.5rem] md:h-[18.5rem] px-5 pt-14 md:pt-16"
               >
-                <p class="font-bold leading-tight pr-36">
+                <p class="font-bold leading-tight xl:pr-36">
                   Mujeres en las Pymes y comunidad de negocios
                 </p>
-                <p class="flex flex-col text-lg font-[200] leading-tight">
+                <p
+                  class="flex flex-col text-base md:text-lg font-[200] leading-tight"
+                >
                   <span
                     >Impacto en el sector y buenas prácticas de inclusión y
                     equidad que todas las mujeres logren una relación de equidad
@@ -235,7 +326,7 @@
         </div>
       </section>
       <div
-        class="flex items-center justify-center gap-10 py-16 bg-secondary-600"
+        class="flex items-center justify-center gap-10 py-16 bg-secondary-600 flex-col lg:flex-row"
       >
         <a
           href="https://puntopyme.com.py/"
@@ -289,8 +380,12 @@
       <a href="/">
         <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
       </a>
-      <div class="flex items-start justify-between mx-16">
-        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+      <div
+        class="flex items-start justify-between mx-16 flex-col md:flex-row gap-8 md:gap-0"
+      >
+        <div
+          class="flex gap-8 md:gap-36 text-xs font-[200] leading-[1.15rem] flex-col md:flex-row"
+        >
           <div class="flex flex-col">
             <div class="">
               <ul>
@@ -309,9 +404,15 @@
               <ul>
                 <li class="text-sm font-[600]">Navegación</li>
                 <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li>
+                  <a href="productos-y-servicios.html">Productos & servicios</a>
+                </li>
                 <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
-                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li>
+                  <a href="clientes-y-experiencias.html"
+                    >Clientes & experiencias</a
+                  >
+                </li>
                 <li><a href="equipo-argon.html">Equipo Argón</a></li>
                 <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
                 <li><a href="#">Campus Argón</a></li>
@@ -331,11 +432,7 @@
                 <a
                   href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
                 >
-                  <img
-                    src="linkedin-logo.png"
-                    class="w-[2.1rem]"
-                    alt=""
-                  />
+                  <img src="linkedin-logo.png" class="w-[2.1rem]" alt="" />
                 </a>
               </div>
             </li>
@@ -390,7 +487,7 @@
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         autoplay: {
-          delay: 3500,
+          delay: 8000,
           disableOnInteraction: false,
         },
         pagination: {

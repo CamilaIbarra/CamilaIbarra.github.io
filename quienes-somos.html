@@ -51,24 +51,61 @@
       .swiper-pagination-bullet-active {
         background-color: #061433;
       }
+
+      @media (max-width: 1024px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: 0;
+          left: 1.35rem;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: -53px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: -36px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 0;
+        }
+      }
     </style>
   </head>
 
   <body class="font-manrope appearance-none">
     <!-- START OF NAVBAR -->
     <nav
-      class="w-full flex justify-between items-start px-11 bg-navbar bg-cover bg-no-repeat"
+      class="w-full flex justify-center md:justify-between items-center md:items-start md:px-11 bg-primary-700 md:bg-navbar md:bg-cover md:bg-no-repeat"
     >
       <a href="/">
         <img
-          class="w-80"
+          class="w-72 md:w-80"
           src="logo_argon_sin_fondo_texto_blanco.png"
           alt="logo-argon"
         />
       </a>
-      <div class="pt-16 flex flex-col">
+      <div class="md:pt-16 flex flex-col">
         <div class="flex items-center gap-3 mr-3">
-          <div class="flex items-center">
+          <div class="hidden md:flex items-center">
             <div class="relative">
               <input
                 type="search"
@@ -78,7 +115,7 @@
               />
               <img
                 src="search-icon.png"
-                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                class="w-[1.35rem] md:[1.1rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1 md:top-[0.15rem]"
                 alt=""
               />
             </div>
@@ -89,18 +126,56 @@
         </div>
         <div class="menu hidden text-end">
           <div
-            class="flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
+            class="hidden md:flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
           >
             <a href="quienes-somos.html">Quiénes somos</a>
-            <a href="productos-y-servicios.html"
-              >Productos & servicios</a
-            >
+            <a href="productos-y-servicios.html">Productos & servicios</a>
             <a href="stack-tecnologico.html">Stack tecnológico</a>
             <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
             <a href="equipo-argon.html">Equipo Argón</a>
             <a href="habla-con-argon.html">Hablá con Argón</a>
             <a href="">Campus Argón</a>
             <a href="news.html">News</a>
+          </div>
+          <div
+            class="absolute right-0 top-[10.1rem] flex flex-col text-white font-[300] text-sm md:hidden"
+          >
+            <a
+              href="quienes-somos.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Quiénes somos</a
+            >
+            <a
+              href="productos-y-servicios.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Productos & servicios</a
+            >
+            <a
+              href="stack-tecnologico.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Stack tecnológico</a
+            >
+            <a
+              href="clientes-y-experiencias.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Clientes & experiencias</a
+            >
+            <a
+              href="equipo-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Equipo Argón</a
+            >
+            <a
+              href="habla-con-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Hablá con Argón</a
+            >
+            <a href="" class="p-4 bg-primary-700 border border-white"
+              >Campus Argón</a
+            >
+            <a href="news.html" class="p-4 bg-primary-700 border border-white"
+              >News</a
+            >
           </div>
         </div>
       </div>
@@ -113,14 +188,14 @@
             Quiénes somos
           </h2>
           <div
-            class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
+            class="w-72 md:w-96 lg:w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
           ></div>
         </div>
         <div class="pt-2">
           <p
             class="flex flex-col items-center justify-center text-base text-primary-700 font-[400] leading-snug"
           >
-            <span class="text-center mx-[22rem]"
+            <span class="text-center mx-11 lg:mx-60 xl:mx-[22rem]"
               >Somos una empresa de base tecnológica que desarrolla soluciones
               para resolver necesidades de las empresas del ámbito público y
               privado,
@@ -128,7 +203,7 @@
             <span class="text-center">
               con un fuerte vertical dentro de las FINANZAS EMBEBIDAS.
             </span>
-            <span class="text-center mx-[25rem]"
+            <span class="text-center mx-5 lg:mx-60 xl:mx-[25rem]"
               >Desde 2010 llegamos con nuestras soluciones a la región, sumando
               plataformas que ayudan a transformar e innovar.
             </span>
@@ -141,7 +216,7 @@
           <p
             class="flex flex-col items-center justify-center text-base text-primary-700 font-[400] leading-snug"
           >
-            <span class="text-center mx-[23rem]"
+            <span class="text-center mx-5 lg:mx-60 xl:mx-[23rem]"
               >Todos nuestros servicios están diseñados para proponer
               customizaciones graduales y efectivas utilizando metodología SCRUM
               con Sprint de corta duración y alto valor agregado.
@@ -150,21 +225,24 @@
         </div>
       </section>
       <section class="relative">
-        <img src="about-banner.png" class="" alt="" />
+        <img src="about-banner.png" class="hidden md:flex" alt="" />
+        <div class="py-32 bg-primary-700 md:hidden"></div>
         <div
-          class="flex flex-col text-xl text-secondary-600 absolute top-7 left-[45%]"
+          class="flex flex-col text-lg md:text-xl text-secondary-600 absolute top-4 left-[35%] md:top-3 md:left-[41%] lg:top-7 lg:left-[45%]"
         >
           <p class="text-center font-extrabold">Qué hacemos</p>
         </div>
-        <div class="flex flex-col text-base text-white absolute bottom-7">
-          <p class="text-center font-[300] mx-[22rem]">
+        <div
+          class="flex flex-col text-sm md:text-base text-white absolute bottom-7"
+        >
+          <p class="text-center font-[300] mx-5 lg:mx-40 xl:mx-[22rem]">
             Somos un equipo de profesionales que orientan su esfuerzo a crear
             productos y servicios que permitan resolver problemas de
             integración, plataformas digitales y transaccionales con apoyo
             continuo a nuestros clientes y un alto compromiso con la
             sostenibilidad y sustentabilidad.
           </p>
-          <p class="text-center font-bold mx-[26rem]">
+          <p class="text-center font-bold mx-5 lg:mx-44 xl:mx-[26rem]">
             Creemos que la innovación tecnológica es el camino para la inclusión
             y el crecimiento.
           </p>
@@ -180,55 +258,65 @@
             Cómo lo hacemos
           </h2>
           <div class="swiper-wrapper">
-            <div class="swiper-slide px-56">
-              <div class="flex items-center justify-center gap-10">
+            <div class="swiper-slide px-5 md:px-10 lg:px-56">
+              <div
+                class="flex items-center justify-center gap-10 flex-col md:flex-row"
+              >
                 <img src="about-01.png" class="w-52" alt="paso-1" />
                 <div class="pb-12">
-                  <p class="font-[400]">
+                  <p class="font-[400] text-center md:text-start">
                     Identificamos las necesidades, diseñamos un servicio o
                     producto y articulamos su despliegue
                   </p>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide px-56">
-              <div class="flex items-center justify-center gap-10">
+            <div class="swiper-slide px-5 md:px-10 lg:px-56">
+              <div
+                class="flex items-center justify-center gap-10 flex-col md:flex-row"
+              >
                 <img src="about-02.png" class="w-52" alt="paso-2" />
                 <div class="flex flex-col pb-6">
-                  <p class="font-[400]">
+                  <p class="font-[400] text-center md:text-start">
                     Discovery process del cliente / proyecto destinado a
                     establecer las bases del plan de trabajo y requerimientos
                   </p>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide px-56">
-              <div class="flex items-center justify-center gap-10">
+            <div class="swiper-slide px-5 md:px-10 lg:px-56">
+              <div
+                class="flex items-center justify-center gap-10 flex-col md:flex-row"
+              >
                 <img src="about-03.png" class="w-52" alt="paso-3" />
                 <div class="flex flex-col pb-[3.25rem]">
-                  <p class="font-[400]">
+                  <p class="font-[400] text-center md:text-start">
                     ROADMAP. Definición de responsables y seguridad de la
                     información a tratar
                   </p>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide px-56">
-              <div class="flex items-center justify-center gap-10">
+            <div class="swiper-slide px-5 md:px-10 lg:px-56">
+              <div
+                class="flex items-center justify-center gap-10 flex-col md:flex-row"
+              >
                 <img src="about-04.png" class="w-52" alt="paso-4" />
                 <div class="flex flex-col pb-5">
-                  <p class="font-[400]">
+                  <p class="font-[400] text-center md:text-start">
                     Nuestro modelo se basa en desarrollo/ Integración continua
                     con entregables y Sprint definidos con el cliente
                   </p>
                 </div>
               </div>
             </div>
-            <div class="swiper-slide px-56">
-              <div class="flex items-center justify-center gap-10">
+            <div class="swiper-slide px-5 md:px-10 lg:px-56">
+              <div
+                class="flex items-center justify-center gap-10 flex-col md:flex-row"
+              >
                 <img src="about-05.png" class="w-52" alt="paso-5" />
                 <div class="flex flex-col pb-[3.25rem]">
-                  <p class="font-[400]">
+                  <p class="font-[400] text-center md:text-start">
                     Servicios CLOUD seguros, de acuerdo con el marco normativo
                     de cada país / región
                   </p>
@@ -244,9 +332,11 @@
           <h2 class="text-xl text-secondary-600 font-extrabold">
             Por qué elegirnos
           </h2>
-          <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[1px]"></div>
+          <div
+            class="w-72 md:w-96 lg:w-[29.5rem] bg-primary-700 bg-opacity-80 h-[1px]"
+          ></div>
         </div>
-        <div class="pt-2">
+        <div class="pt-2 px-3 md:px-0">
           <p
             class="flex flex-col items-center justify-center text-base text-primary-700 font-[400] leading-snug"
           >
@@ -275,8 +365,12 @@
       <a href="/">
         <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
       </a>
-      <div class="flex items-start justify-between mx-16">
-        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+      <div
+        class="flex items-start justify-between mx-16 flex-col md:flex-row gap-8 md:gap-0"
+      >
+        <div
+          class="flex gap-8 md:gap-36 text-xs font-[200] leading-[1.15rem] flex-col md:flex-row"
+        >
           <div class="flex flex-col">
             <div class="">
               <ul>
@@ -295,9 +389,15 @@
               <ul>
                 <li class="text-sm font-[600]">Navegación</li>
                 <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li>
+                  <a href="productos-y-servicios.html">Productos & servicios</a>
+                </li>
                 <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
-                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li>
+                  <a href="clientes-y-experiencias.html"
+                    >Clientes & experiencias</a
+                  >
+                </li>
                 <li><a href="equipo-argon.html">Equipo Argón</a></li>
                 <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
                 <li><a href="#">Campus Argón</a></li>
@@ -317,11 +417,7 @@
                 <a
                   href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
                 >
-                  <img
-                    src="linkedin-logo.png"
-                    class="w-[2.1rem]"
-                    alt=""
-                  />
+                  <img src="linkedin-logo.png" class="w-[2.1rem]" alt="" />
                 </a>
               </div>
             </li>
@@ -376,7 +472,7 @@
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         autoplay: {
-          delay: 3500,
+          delay: 8000,
           disableOnInteraction: false,
         },
         pagination: {

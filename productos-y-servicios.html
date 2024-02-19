@@ -35,18 +35,18 @@
   <body class="font-manrope appearance-none">
     <!-- START OF NAVBAR -->
     <nav
-      class="w-full flex justify-between items-start px-11 bg-navbar bg-cover bg-no-repeat"
+      class="w-full flex justify-center md:justify-between items-center md:items-start md:px-11 bg-primary-700 md:bg-navbar md:bg-cover md:bg-no-repeat"
     >
       <a href="/">
         <img
-          class="w-80"
+          class="w-72 md:w-80"
           src="logo_argon_sin_fondo_texto_blanco.png"
           alt="logo-argon"
         />
       </a>
-      <div class="pt-16 flex flex-col">
+      <div class="md:pt-16 flex flex-col">
         <div class="flex items-center gap-3 mr-3">
-          <div class="flex items-center">
+          <div class="hidden md:flex items-center">
             <div class="relative">
               <input
                 type="search"
@@ -56,7 +56,7 @@
               />
               <img
                 src="search-icon.png"
-                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                class="w-[1.35rem] md:[1.1rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1 md:top-[0.15rem]"
                 alt=""
               />
             </div>
@@ -67,18 +67,56 @@
         </div>
         <div class="menu hidden text-end">
           <div
-            class="flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
+            class="hidden md:flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
           >
             <a href="quienes-somos.html">Quiénes somos</a>
-            <a href="productos-y-servicios.html"
-              >Productos & servicios</a
-            >
+            <a href="productos-y-servicios.html">Productos & servicios</a>
             <a href="stack-tecnologico.html">Stack tecnológico</a>
             <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
             <a href="equipo-argon.html">Equipo Argón</a>
             <a href="habla-con-argon.html">Hablá con Argón</a>
             <a href="">Campus Argón</a>
             <a href="news.html">News</a>
+          </div>
+          <div
+            class="absolute right-0 top-[10.1rem] flex flex-col text-white font-[300] text-sm md:hidden"
+          >
+            <a
+              href="quienes-somos.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Quiénes somos</a
+            >
+            <a
+              href="productos-y-servicios.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Productos & servicios</a
+            >
+            <a
+              href="stack-tecnologico.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Stack tecnológico</a
+            >
+            <a
+              href="clientes-y-experiencias.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Clientes & experiencias</a
+            >
+            <a
+              href="equipo-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Equipo Argón</a
+            >
+            <a
+              href="habla-con-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Hablá con Argón</a
+            >
+            <a href="" class="p-4 bg-primary-700 border border-white"
+              >Campus Argón</a
+            >
+            <a href="news.html" class="p-4 bg-primary-700 border border-white"
+              >News</a
+            >
           </div>
         </div>
       </div>
@@ -90,281 +128,323 @@
           class="flex flex-col gap-7 items-center justify-center py-8 lg:py-6 xl:py-8"
         >
           <h2
-            class="text-[1.55rem] lg:text-xl xl:text-[1.55rem] text-secondary-600 font-extrabold"
+            class="text-lg lg:text-xl xl:text-xl text-secondary-600 font-extrabold"
           >
             Productos & servicios
           </h2>
           <div
-            class="w-[36rem] lg:w-[26rem] xl:w-[36rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
+            class="w-72 md:w-96 lg:w-[26rem] xl:w-[36rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
           ></div>
         </div>
         <div class="flex flex-col items-center justify-center">
           <div class="flex items-center gap-4">
             <img
               src="icono-positivo-copy.png"
-              class="w-[5.75rem] lg:w-20 xl:w-[5.75rem]"
+              class="w-20 md:w-[5.75rem] lg:w-20 xl:w-[5.75rem]"
               alt=""
             />
-            <p
-              class="text-[2.5rem] lg:text-3xl xl:text-[2.5rem] font-[300] pt-4"
-            >
+            <p class="text-[2rem] lg:text-3xl xl:text-[2.5rem] font-[300] pt-4">
               Tech
             </p>
           </div>
-          <div class="flex items-center gap-16 py-10">
-            <div class="flex flex-col">
-              <p
-                class="text-[1.6rem] font-extrabold text-primary-700 py-[0.125rem]"
-              >
-                Lending 360
-              </p>
-              <div class="mt-[3.25rem]">
-                <a
-                  href="lending.html"
-                  class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
+          <div class="flex items-center gap-0 lg:gap-16 flex-col lg:flex-row">
+            <div
+              class="flex items-center gap-10 md:gap-16 py-10 flex-col md:flex-row"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="text-2xl md:text-[1.6rem] font-extrabold text-primary-700 py-[0.125rem] text-center md:text-start"
                 >
-                  <span
-                    class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
-                    >Saber más</span
-                  >
-                  <div
-                    class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                  Lending 360
+                </p>
+                <div class="mt-6 md:mt-[3.25rem]">
+                  <a
+                    href="lending.html"
+                    class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
                   >
                     <span
-                      class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
-                      >-></span
+                      class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
+                      >Saber más</span
                     >
-                  </div>
-                </a>
+                    <div
+                      class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                    >
+                      <span
+                        class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
+                        >-></span
+                      >
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"></div>
-            <div class="flex flex-col">
-              <p
-                class="text-[1.6rem] font-extrabold text-primary-700 py-[0.125rem]"
-              >
-                Payments
-              </p>
-              <div class="mt-[3.25rem]">
-                <a
-                  href="payments.html"
-                  class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
+              <div
+                class="hidden md:flex h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"
+              ></div>
+              <div
+                class="w-64 bg-primary-700 bg-opacity-80 h-[1px] md:hidden"
+              ></div>
+              <div class="flex flex-col">
+                <p
+                  class="text-2xl md:text-[1.6rem] font-extrabold text-primary-700 py-[0.125rem] text-center md:text-start"
                 >
-                  <span
-                    class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
-                    >Saber más</span
-                  >
-                  <div
-                    class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                  Payments
+                </p>
+                <div class="mt-6 md:mt-[3.25rem]">
+                  <a
+                    href="payments.html"
+                    class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
                   >
                     <span
-                      class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
-                      >-></span
+                      class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
+                      >Saber más</span
                     >
-                  </div>
-                </a>
+                    <div
+                      class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                    >
+                      <span
+                        class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
+                        >-></span
+                      >
+                    </div>
+                  </a>
+                </div>
               </div>
+              <div
+                class="hidden lg:flex h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"
+              ></div>
+              <div
+                class="w-64 bg-primary-700 bg-opacity-80 h-[1px] md:hidden"
+              ></div>
             </div>
-            <div class="h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"></div>
-            <div class="flex flex-col">
-              <p
-                class="text-[1.6rem] font-extrabold text-primary-700 py-[0.125rem]"
-              >
-                Factoring
-              </p>
-              <div class="mt-[3.25rem]">
-                <a
-                  href="factoring.html"
-                  class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
+            <div
+              class="flex items-center gap-10 md:gap-16 pt-0 pb-10 md:py-10 flex-col md:flex-row"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="text-2xl md:text-[1.6rem] font-extrabold text-primary-700 py-[0.125rem] text-center md:text-start"
                 >
-                  <span
-                    class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
-                    >Saber más</span
-                  >
-                  <div
-                    class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                  Factoring
+                </p>
+                <div class="mt-6 md:mt-[3.25rem]">
+                  <a
+                    href="factoring.html"
+                    class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
                   >
                     <span
-                      class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
-                      >-></span
+                      class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
+                      >Saber más</span
                     >
-                  </div>
-                </a>
+                    <div
+                      class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                    >
+                      <span
+                        class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
+                        >-></span
+                      >
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"></div>
-            <div class="flex flex-col">
-              <p
-                class="text-[1.6rem] font-extrabold text-primary-700 py-[0.125rem]"
-              >
-                Onboarding
-              </p>
-              <div class="mt-[3.25rem]">
-                <a
-                  href="onboarding.html"
-                  class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
+              <div
+                class="hidden md:flex h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"
+              ></div>
+              <div
+                class="w-64 bg-primary-700 bg-opacity-80 h-[1px] md:hidden"
+              ></div>
+              <div class="flex flex-col">
+                <p
+                  class="text-2xl md:text-[1.6rem] font-extrabold text-primary-700 py-[0.125rem] text-center md:text-start"
                 >
-                  <span
-                    class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
-                    >Saber más</span
-                  >
-                  <div
-                    class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                  Onboarding
+                </p>
+                <div class="mt-6 md:mt-[3.25rem]">
+                  <a
+                    href="onboarding.html"
+                    class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
                   >
                     <span
-                      class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
-                      >-></span
+                      class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
+                      >Saber más</span
                     >
-                  </div>
-                </a>
+                    <div
+                      class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                    >
+                      <span
+                        class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
+                        >-></span
+                      >
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center pt-10 lg:pt-0">
           <div class="flex items-center gap-4">
             <img
               src="icono-positivo-copy.png"
-              class="w-[5.75rem] lg:w-20 xl:w-[5.75rem]"
+              class="w-20 md:w-[5.75rem] lg:w-20 xl:w-[5.75rem]"
               alt=""
             />
-            <p
-              class="text-[2.5rem] lg:text-3xl xl:text-[2.5rem] font-[300] pt-4"
-            >
+            <p class="text-[2rem] lg:text-3xl xl:text-[2.5rem] font-[300] pt-4">
               Inclusion
             </p>
           </div>
-          <div class="flex items-center gap-16 py-10">
-            <div class="flex flex-col">
-              <p
-                class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem]"
-              >
-                <span>Mujeres</span>
-                <span>xmas</span>
-              </p>
-              <div class="mt-5">
-                <a
-                  href="mujeres.html"
-                  class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
+          <div class="flex flex-col items-center gap-0 lg:gap-16 lg:flex-row">
+            <div
+              class="flex items-center gap-10 md:gap-16 py-10 flex-col md:flex-row"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem] text-center md:text-start"
                 >
-                  <span
-                    class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
-                    >Saber más</span
-                  >
-                  <div
-                    class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                  <span>Mujeres</span>
+                  <span>xmas</span>
+                </p>
+                <div class="mt-5">
+                  <a
+                    href="mujeres.html"
+                    class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
                   >
                     <span
-                      class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
-                      >-></span
+                      class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
+                      >Saber más</span
                     >
-                  </div>
-                </a>
+                    <div
+                      class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                    >
+                      <span
+                        class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
+                        >-></span
+                      >
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"></div>
-            <div class="flex flex-col">
-              <p
-                class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem]"
-              >
-                <span>Punto</span>
-                <span>Pyme</span>
-              </p>
-              <div class="mt-5">
-                <a
-                  href="puntopyme.html"
-                  class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
+              <div
+                class="hidden md:flex h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"
+              ></div>
+              <div
+                class="w-64 bg-primary-700 bg-opacity-80 h-[1px] md:hidden"
+              ></div>
+              <div class="flex flex-col">
+                <p
+                  class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem] text-center md:text-start"
                 >
-                  <span
-                    class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
-                    >Saber más</span
-                  >
-                  <div
-                    class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                  <span>Punto</span>
+                  <span>Pyme</span>
+                </p>
+                <div class="mt-5">
+                  <a
+                    href="puntopyme.html"
+                    class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
                   >
                     <span
-                      class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
-                      >-></span
+                      class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
+                      >Saber más</span
                     >
-                  </div>
-                </a>
+                    <div
+                      class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                    >
+                      <span
+                        class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
+                        >-></span
+                      >
+                    </div>
+                  </a>
+                </div>
               </div>
+              <div
+                class="hidden lg:flex h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"
+              ></div>
+              <div
+                class="w-64 bg-primary-700 bg-opacity-80 h-[1px] md:hidden"
+              ></div>
             </div>
-            <div class="h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"></div>
-            <div class="flex flex-col">
-              <p
-                class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem]"
-              >
-                <span>Digital</span>
-                <span>Academy</span>
-              </p>
-              <div class="mt-5">
-                <a
-                  href="digital-academy.html"
-                  class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
+            <div
+              class="flex items-center gap-10 md:gap-16 pt-0 pb-10 md:py-10 flex-col md:flex-row"
+            >
+              <div class="flex flex-col">
+                <p
+                  class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem] text-center md:text-start"
                 >
-                  <span
-                    class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
-                    >Saber más</span
-                  >
-                  <div
-                    class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                  <span>Digital</span>
+                  <span>Academy</span>
+                </p>
+                <div class="mt-5">
+                  <a
+                    href="digital-academy.html"
+                    class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
                   >
                     <span
-                      class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
-                      >-></span
+                      class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
+                      >Saber más</span
                     >
-                  </div>
-                </a>
+                    <div
+                      class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                    >
+                      <span
+                        class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
+                        >-></span
+                      >
+                    </div>
+                  </a>
+                </div>
               </div>
-            </div>
-            <div class="h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"></div>
-            <div class="flex flex-col">
-              <p
-                class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem]"
-              >
-                <span>Posta</span>
-                <span>Digital</span>
-              </p>
-              <div class="mt-5">
-                <a
-                  href="posta-digital.html"
-                  class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
+              <div
+                class="hidden md:flex h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"
+              ></div>
+              <div
+                class="w-64 bg-primary-700 bg-opacity-80 h-[1px] md:hidden"
+              ></div>
+              <div class="flex flex-col">
+                <p
+                  class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem] text-center md:text-start"
                 >
-                  <span
-                    class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
-                    >Saber más</span
-                  >
-                  <div
-                    class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                  <span>Posta</span>
+                  <span>Digital</span>
+                </p>
+                <div class="mt-5">
+                  <a
+                    href="posta-digital.html"
+                    class="flex items-center justify-center gap-4 lg:gap-3 xl:gap-4 bg-secondary-600 py-1.5 w-[9.5rem] lg:w-32 xl:w-[9.5rem]"
                   >
                     <span
-                      class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
-                      >-></span
+                      class="text-[0.9rem] lg:text-xs xl:text-[0.9rem] text-white font-bold"
+                      >Saber más</span
                     >
-                  </div>
-                </a>
+                    <div
+                      class="flex items-center justify-center w-5 h-5 lg:w-4 lg:h-4 xl:w-5 xl:h-5 bg-primary-700 text-white rounded-full"
+                    >
+                      <span
+                        class="text-xl lg:text-sm xl:text-xl font-[200] pb-0.5"
+                        >-></span
+                      >
+                    </div>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center pt-10 lg:pt-0">
           <div class="flex items-center gap-4">
             <img
               src="icono-positivo-copy.png"
-              class="w-[5.75rem] lg:w-20 xl:w-[5.75rem]"
+              class="w-20 md:w-[5.75rem] lg:w-20 xl:w-[5.75rem]"
               alt=""
             />
-            <p
-              class="text-[2.5rem] lg:text-3xl xl:text-[2.5rem] font-[300] pt-4"
-            >
+            <p class="text-[2rem] lg:text-3xl xl:text-[2.5rem] font-[300] pt-4">
               Consulting
             </p>
           </div>
-          <div class="flex items-center gap-16 py-10">
-            <div class="flex flex-col">
+          <div
+            class="flex items-center gap-10 md:gap-16 py-10 flex-col md:flex-row"
+          >
+            <div class="flex flex-col items-center md:items-start">
               <p
-                class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem]"
+                class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem] text-center md:text-start"
               >
                 <span>Innovación y</span>
                 <span>transformación</span>
@@ -390,10 +470,15 @@
                 </a>
               </div>
             </div>
-            <div class="h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"></div>
-            <div class="flex flex-col">
+            <div
+              class="hidden md:flex h-44 bg-primary-700 bg-opacity-60 w-[0.1rem]"
+            ></div>
+            <div
+              class="w-64 bg-primary-700 bg-opacity-80 h-[1px] md:hidden"
+            ></div>
+            <div class="flex flex-col items-center md:items-start">
               <p
-                class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem]"
+                class="flex flex-col text-[1.6rem] font-extrabold text-primary-700 leading-tight py-[0.125rem] text-center md:text-start"
               >
                 <span>Gestión</span>
                 <span>del cambio</span>
@@ -428,8 +513,12 @@
       <a href="/">
         <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
       </a>
-      <div class="flex items-start justify-between mx-16">
-        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+      <div
+        class="flex items-start justify-between mx-16 flex-col md:flex-row gap-8 md:gap-0"
+      >
+        <div
+          class="flex gap-8 md:gap-36 text-xs font-[200] leading-[1.15rem] flex-col md:flex-row"
+        >
           <div class="flex flex-col">
             <div class="">
               <ul>
@@ -448,9 +537,15 @@
               <ul>
                 <li class="text-sm font-[600]">Navegación</li>
                 <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li>
+                  <a href="productos-y-servicios.html">Productos & servicios</a>
+                </li>
                 <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
-                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li>
+                  <a href="clientes-y-experiencias.html"
+                    >Clientes & experiencias</a
+                  >
+                </li>
                 <li><a href="equipo-argon.html">Equipo Argón</a></li>
                 <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
                 <li><a href="#">Campus Argón</a></li>
@@ -470,11 +565,7 @@
                 <a
                   href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
                 >
-                  <img
-                    src="linkedin-logo.png"
-                    class="w-[2.1rem]"
-                    alt=""
-                  />
+                  <img src="linkedin-logo.png" class="w-[2.1rem]" alt="" />
                 </a>
               </div>
             </li>
