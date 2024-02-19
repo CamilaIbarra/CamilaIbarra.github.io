@@ -63,7 +63,7 @@
       .swiper-pagination-bullets.swiper-pagination-horizontal,
       .swiper-pagination-custom,
       .swiper-pagination-fraction {
-        bottom: -7px;
+        bottom: -6px;
         left: 76px;
       }
 
@@ -78,83 +78,165 @@
       .swiper-pagination-bullet-active {
         background-color: #061433;
       }
+
+      @media (max-width: 1024px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: 0;
+          left: 4.75rem;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: -53px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 35px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          left: 1rem;
+        }
+      }
     </style>
   </head>
 
   <body class="font-manrope appearance-none">
-    <!-- START OF HEADER -->
-    <header class="relative">
-      <!-- START OF NAVBAR -->
-      <nav
-        class="absolute w-full flex justify-between items-start px-11 bg-transparent"
-      >
-        <a href="/">
-          <img
-            class="w-80"
-            src="logo_argon_sin_fondo_texto_blanco.png"
-            alt="logo-argon"
-          />
-        </a>
-        <div class="pt-16 flex flex-col">
-          <div class="flex items-center gap-3 mr-3">
-            <a
-              href="#"
-              class="appearance-none bg-transparent rounded-2xl uppercase text-sm text-white font-bold flex items-center justify-center h-[1.45rem] w-[4.25rem] border border-white focus:outline-none focus:text-white focus:pl-8"
-            >
-              <span>login</span>
-            </a>
-            <div class="flex items-center">
-              <div class="relative">
-                <input
-                  type="search"
-                  class="appearance-none bg-transparent rounded-2xl h-[1.45rem] w-[8.5rem] border border-white focus:outline-none focus:text-white focus:pl-8"
-                  name="search-bar"
-                  id="search-bar"
-                />
-                <img
-                  src="search-icon.png"
-                  class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
-                  alt=""
-                />
-              </div>
+    <!-- START OF NAVBAR -->
+    <nav
+      class="absolute w-full flex justify-between items-start px-10 md:px-[1.65rem] lg:px-11 bg-transparent"
+    >
+      <a href="/">
+        <img
+          class="w-72 md:w-80"
+          src="logo_argon_sin_fondo_texto_blanco.png"
+          alt="logo-argon"
+        />
+      </a>
+      <div class="pt-14 md:pt-16 flex flex-col">
+        <div class="flex items-center gap-3 mr-3">
+          <a
+            href="#"
+            class="hidden md:flex appearance-none bg-transparent rounded-2xl uppercase text-sm text-white font-bold flex items-center justify-center h-[1.45rem] w-[4.25rem] border border-white focus:outline-none focus:text-white focus:pl-8"
+          >
+            <span>login</span>
+          </a>
+          <div class="hidden md:flex items-center">
+            <div class="relative">
+              <input
+                type="search"
+                class="appearance-none bg-transparent rounded-2xl h-[1.45rem] w-[8.5rem] border border-white focus:outline-none focus:text-white focus:pl-8"
+                name="search-bar"
+                id="search-bar"
+              />
+              <img
+                src="search-icon.png"
+                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                alt=""
+              />
             </div>
-            <button type="button" class="menu-btn focus:outline-none">
-              <img src="menu-icon.png" class="w-8" alt="" />
-            </button>
           </div>
-          <div class="menu hidden text-end">
-            <div class="flex flex-col text-white font-[200] text-xs pr-4 pt-4">
-              <a href="quienes-somos.html">Quiénes somos</a>
-              <a href="productos-y-servicios.html"
-                >Productos & servicios</a
-              >
-              <a href="stack-tecnologico.html">Stack tecnológico</a>
-              <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
-              <a href="equipo-argon.html">Equipo Argón</a>
-              <a href="habla-con-argon.html">Hablá con Argón</a>
-              <a href="">Campus Argón</a>
-              <a href="news.html">News</a>
-            </div>
+          <button type="button" class="menu-btn focus:outline-none">
+            <img src="menu-icon.png" class="w-8" alt="" />
+          </button>
+        </div>
+        <div class="menu hidden text-end">
+          <div
+            class="hidden md:flex flex-col text-white font-[200] text-xs pr-4 pt-4"
+          >
+            <a href="quienes-somos.html">Quiénes somos</a>
+            <a href="productos-y-servicios.html">Productos & servicios</a>
+            <a href="stack-tecnologico.html">Stack tecnológico</a>
+            <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
+            <a href="equipo-argon.html">Equipo Argón</a>
+            <a href="habla-con-argon.html">Hablá con Argón</a>
+            <a href="">Campus Argón</a>
+            <a href="news.html">News</a>
+          </div>
+          <div
+            class="absolute right-0 top-[7rem] flex flex-col text-white font-[300] text-sm md:hidden"
+          >
+            <a
+              href="quienes-somos.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Quiénes somos</a
+            >
+            <a
+              href="productos-y-servicios.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Productos & servicios</a
+            >
+            <a
+              href="stack-tecnologico.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Stack tecnológico</a
+            >
+            <a
+              href="clientes-y-experiencias.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Clientes & experiencias</a
+            >
+            <a
+              href="equipo-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Equipo Argón</a
+            >
+            <a
+              href="habla-con-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Hablá con Argón</a
+            >
+            <a href="" class="p-4 bg-primary-700 border border-white"
+              >Campus Argón</a
+            >
+            <a
+              href="news.html"
+              class="p-4 bg-primary-700 border border-white"
+              >News</a
+            >
           </div>
         </div>
-      </nav>
-      <!-- END OF NAVBAR -->
-      <img src="home_argon-01.jpg" alt="" />
-
+      </div>
+    </nav>
+    <!-- END OF NAVBAR -->
+    <!-- START OF HEADER -->
+    <header
+      class="h-screen md:h-[50vh] lg:h-screen bg-home-01 bg-cover bg-no-repeat"
+    >
+      <img src="home_argon-01.jpg" class="hidden" alt="" />
       <div
-        class="absolute left-[4.5rem] top-44 flex flex-col gap-2 text-6xl text-white font-thin w-2/6"
+        class="absolute left-[4.5rem] top-44 flex flex-col gap-2 text-5xl md:text-4xl lg:text-5xl xl:text-6xl text-white font-thin md:w-2/6"
       >
         Nuestro mundo gira alrededor
         <span class="text-secondary-600 font-bold">tuyo.</span>
       </div>
       <div
-        class="absolute left-[4.5rem] bottom-28 lg:bottom-[6.5rem] xl:bottom-28 pl-1.5"
+        class="absolute left-[4.5rem] bottom-28 md:bottom-[38rem] lg:bottom-[6.5rem] xl:bottom-28 pl-1.5"
       >
         <p class="text-base font-thin text-white w-7/12">
           Creamos soluciones tecnológicas ágiles y seguras para tu empresa.
         </p>
       </div>
-      <div class="absolute left-[4.5rem] bottom-10 bg-white py-1.5 px-5 ml-1.5">
+      <div
+        class="absolute left-[4.5rem] bottom-10 md:bottom-[34rem] lg:bottom-10 bg-white py-1.5 px-5 ml-1.5"
+      >
         <a href="" class="flex items-center gap-3">
           <span class="text-base text-primary-700 font-black"
             >Contactanos hoy</span
@@ -171,18 +253,28 @@
     <!-- START OF PRODUCTS -->
     <div class="bg-white flex flex-col items-center justify-center py-7">
       <div class="flex flex-col gap-6 items-center justify-center">
-        <h2 class="text-[1.35rem] text-secondary-600 font-extrabold">
+        <h2 class="text-xl xl:text-[1.35rem] text-secondary-600 font-extrabold">
           Productos & servicios
         </h2>
-        <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[1.5px]"></div>
+        <div
+          class="w-72 md:w-96 xl:w-[29.5rem] bg-primary-700 bg-opacity-80 h-[1.5px]"
+        ></div>
       </div>
-      <div class="flex items-center gap-[7.5rem] py-11">
-        <div class="flex flex-col pr-6">
+      <div
+        class="flex items-center gap-14 lg:gap-12 xl:gap-[7.5rem] py-11 flex-col lg:flex-row"
+      >
+        <div
+          class="flex flex-col pr-6 lg:pr-[5.5rem] xl:pr-6 items-center lg:items-start"
+        >
           <div class="flex items-center gap-4">
-            <img src="icono-positivo-copy.png" class="w-20" alt="" />
+            <img
+              src="icono-positivo-copy.png"
+              class="w-20"
+              alt=""
+            />
             <p class="text-[2rem] font-[400] pt-4">Tech</p>
           </div>
-          <div class="ml-4 mt-10">
+          <div class="md:ml-6 lg:ml-4 mt-10">
             <ul
               class="text-[1.05rem] leading-[1.65rem] text-secondary-600 font-[300]"
             >
@@ -212,9 +304,9 @@
               </li>
             </ul>
           </div>
-          <div class="ml-4 mt-6">
+          <div class="md:ml-6 lg:ml-4 mt-6">
             <a
-              href=""
+              href="productos-y-servicios.html"
               class="flex items-center justify-center gap-3 bg-secondary-600 py-1 w-[8.25rem]"
             >
               <span class="text-[0.8rem] text-white font-bold">Saber más</span>
@@ -226,13 +318,20 @@
             </a>
           </div>
         </div>
-        <div class="h-72 bg-primary-700 bg-opacity-60 w-[1.5px]"></div>
-        <div class="flex flex-col">
+        <div
+          class="hidden lg:flex h-72 bg-primary-700 bg-opacity-60 w-[1.5px]"
+        ></div>
+        <div class="w-64 bg-primary-700 bg-opacity-80 h-[1px] lg:hidden"></div>
+        <div class="flex flex-col items-center lg:items-start lg:px-6 xl:px-0">
           <div class="flex items-center gap-4">
-            <img src="icono-positivo-copy.png" class="w-20" alt="" />
+            <img
+              src="icono-positivo-copy.png"
+              class="w-20"
+              alt=""
+            />
             <p class="text-[2rem] font-[400] pt-4">Inclusion</p>
           </div>
-          <div class="ml-4 mt-10">
+          <div class="lg:ml-4 mt-10">
             <ul
               class="text-[1.05rem] leading-[1.65rem] text-secondary-600 font-[300]"
             >
@@ -262,9 +361,9 @@
               </li>
             </ul>
           </div>
-          <div class="ml-4 mt-5">
+          <div class="lg:ml-4 mt-5">
             <a
-              href=""
+              href="productos-y-servicios.html"
               class="flex items-center justify-center gap-4 bg-primary-700 py-1 w-[8.25rem]"
             >
               <span class="text-[0.8rem] text-white font-bold">Saber más</span>
@@ -276,14 +375,25 @@
             </a>
           </div>
         </div>
-        <div class="flex gap-12">
-          <div class="h-72 bg-primary-700 bg-opacity-60 w-[1.5px]"></div>
-          <div class="flex flex-col">
+        <div
+          class="flex gap-12 flex-col items-center md:items-start lg:flex-row"
+        >
+          <div
+            class="hidden lg:flex h-72 bg-primary-700 bg-opacity-60 w-[1.5px]"
+          ></div>
+          <div
+            class="w-64 bg-primary-700 bg-opacity-80 h-[1px] lg:hidden"
+          ></div>
+          <div class="flex flex-col items-center lg:items-start">
             <div class="flex items-center gap-4">
-              <img src="icono-positivo-copy.png" class="w-20" alt="" />
+              <img
+                src="icono-positivo-copy.png"
+                class="w-20"
+                alt=""
+              />
               <p class="text-[2rem] font-[400] pt-4">Consulting</p>
             </div>
-            <div class="ml-4 mt-10">
+            <div class="ml-10 lg:ml-4 mt-10">
               <ul
                 class="text-[1.05rem] leading-[1.65rem] text-secondary-600 font-[300]"
               >
@@ -307,9 +417,9 @@
                 </li>
               </ul>
             </div>
-            <div class="ml-4 mt-7">
+            <div class="lg:ml-4 mt-7">
               <a
-                href=""
+                href="productos-y-servicios.html"
                 class="flex items-center justify-center gap-4 bg-primary-700 py-1 w-[8.25rem]"
               >
                 <span class="text-[0.8rem] text-white font-bold"
@@ -330,62 +440,83 @@
     <!-- START OF IMAGE BANNER -->
     <section class="relative">
       <img src="home_argon-04.jpg" alt="" />
-      <div class="absolute left-20 top-14 flex flex-col gap-2">
-        <div class="flex items-center gap-3 text-white">
-          <span class="text-5xl leading-none font-[200]">-></span>
-          <span class="text-5xl leading-none font-[200]">Tecnología</span>
+      <div
+        class="absolute left-4 top-4 md:left-8 md:top-8 lg:left-20 lg:top-14 flex flex-col gap-2"
+      >
+        <div class="flex items-center gap-2 md:gap-3 text-white">
+          <span class="text-xl md:text-3xl lg:text-5xl leading-none font-[200]"
+            >-></span
+          >
+          <span class="text-xl md:text-3xl lg:text-5xl leading-none font-[200]"
+            >Tecnología</span
+          >
         </div>
-        <div class="flex items-center gap-3 text-white">
-          <span class="text-5xl leading-none font-[200]">-></span>
-          <span class="text-5xl leading-none text-white font-[200]"
+        <div class="flex items-center gap-2 md:gap-3 text-white">
+          <span class="text-xl md:text-3xl lg:text-5xl leading-none font-[200]"
+            >-></span
+          >
+          <span
+            class="text-xl md:text-3xl lg:text-5xl leading-none text-white font-[200]"
             >Innovación</span
           >
         </div>
-        <div class="flex items-center gap-3 text-secondary-600">
-          <span class="text-5xl leading-none font-extrabold">-></span>
-          <span class="text-5xl leading-none font-extrabold">Versatilidad</span>
+        <div class="flex items-center gap-2 md:gap-3 text-secondary-600">
+          <span
+            class="text-xl md:text-3xl lg:text-5xl leading-none font-extrabold"
+            >-></span
+          >
+          <span
+            class="text-xl md:text-3xl lg:text-5xl leading-none font-extrabold"
+            >Versatilidad</span
+          >
         </div>
       </div>
-      <div class="absolute left-20 bottom-8 flex flex-col gap-2">
-        <span class="text-5xl leading-none text-secOrange-600 font-extrabold"
+      <div
+        class="absolute left-4 bottom-5 md:left-8 md:bottom-8 lg:left-20 lg:bottom-8 flex flex-col gap-2"
+      >
+        <span
+          class="text-xl md:text-3xl lg:text-5xl leading-none text-secOrange-600 font-extrabold"
           >Servicio 360°</span
         >
-        <span class="text-5xl leading-none text-white font-[200]"
+        <span
+          class="text-xl md:text-3xl lg:text-5xl leading-none text-white font-[200]"
           >Multiplataforma</span
         >
       </div>
-      <div class="absolute right-20 bottom-11 flex flex-col gap-2">
+      <div
+        class="absolute bottom-5 right-4 md:right-8 lg:bottom-10 lg:right-20 md:bottom-11 flex flex-col gap-2"
+      >
         <a
-          href=""
-          class="flex items-center justify-center w-12 h-12 rounded-full bg-secondary-600 text-white"
+          href="productos-y-servicios.html"
+          class="flex items-center justify-center w-6 h-6 md:w-12 md:h-12 rounded-full bg-secondary-600 text-white"
         >
-          <span class="text-5xl font-[200]">+</span>
+          <span class="text-xl md:text-3xl lg:text-5xl font-[200]">+</span>
         </a>
       </div>
     </section>
     <!-- END OF IMAGE BANNER -->
     <!-- START OF SERVICE SWIPER -->
     <section
-      class="pb-6 flex items-center bg-secondary-600 text-white text-3xl font-[200]"
+      class="pb-6 flex items-center bg-secondary-600 text-white text-xl md:text-2xl xl:text-3xl font-[200]"
     >
       <div class="swiper mySwiper py-7">
         <div class="swiper-wrapper">
-          <div class="swiper-slide px-20">
+          <div class="swiper-slide px-5 md:px-10 lg:px-20">
             <p>Servicios digitales a la medida del cliente</p>
           </div>
-          <div class="swiper-slide px-20">
+          <div class="swiper-slide px-5 md:px-10 lg:px-20">
             <p>Impulsamos la transformación y la inclusión</p>
           </div>
-          <div class="swiper-slide px-20">
+          <div class="swiper-slide px-5 md:px-10 lg:px-20">
             <p>Creamos soluciones para que puedas enfocarte en tu negocio</p>
           </div>
-          <div class="swiper-slide px-20">
+          <div class="swiper-slide px-5 md:px-10 lg:px-20">
             <p>Ofrecemos un servicio 360° -> Multiplataforma</p>
           </div>
-          <div class="swiper-slide px-20">
+          <div class="swiper-slide px-5 md:px-10 lg:px-20">
             <p>Favorecemos la omnicanalidad</p>
           </div>
-          <div class="swiper-slide px-20">
+          <div class="swiper-slide px-5 md:px-10 lg:px-20">
             <p class="font-[700]">Seguí tu impulso</p>
           </div>
         </div>
@@ -396,43 +527,57 @@
     <!-- START OF TECH STACK -->
     <section class="bg-white flex flex-col items-center">
       <div class="flex flex-col gap-6 items-center justify-center pt-6">
-        <h2 class="text-[1.35rem] text-secondary-600 font-extrabold">
+        <h2 class="text-xl xl:text-[1.35rem] text-secondary-600 font-extrabold">
           Stack tecnológico
         </h2>
-        <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[1.25px]"></div>
+        <div
+          class="w-72 md:w-96 xl:w-[29.5rem] bg-primary-700 bg-opacity-80 h-[1.25px]"
+        ></div>
       </div>
       <div class="pt-6">
         <p
-          class="flex flex-col items-center justify-center text-base text-primary-700 font-[400]"
+          class="flex flex-col items-center justify-center text-base text-primary-700 font-[400] px-5 md:px-0"
         >
-          <span
+          <span class="text-center md:text-start"
             >Reduce costos adicionales en nuevos desarrollos, y/o adecuaciones
             de servicios</span
           >
-          <span>Reduce el time to market de nuevos servicios</span>
-          <span>Facilita la escalabilidad y la interoperabilidad</span>
+          <span class="text-center md:text-start"
+            >Reduce el time to market de nuevos servicios</span
+          >
+          <span class="text-center md:text-start"
+            >Facilita la escalabilidad y la interoperabilidad</span
+          >
         </p>
       </div>
-      <img src="logos_stack_home.jpg" class="pt-10 pb-5" alt="stack" />
+      <img
+        src="logos_stack_home.jpg"
+        class="pt-10 pb-5"
+        alt="stack"
+      />
     </section>
     <!-- END OF TECH STACK -->
     <!-- START OF CLIENTS -->
     <section class="bg-white flex flex-col items-center">
       <div
-        class="w-[90%] bg-primary-700 bg-opacity-80 h-[0.07rem] shadow-lg shadow-primary-700"
+        class="w-[80%] md:w-[90%] bg-primary-700 bg-opacity-80 h-[0.07rem] shadow-lg shadow-primary-700"
       ></div>
       <div class="flex flex-col gap-7 items-center justify-center py-6">
-        <h2 class="text-[1.35rem] text-secondary-600 font-extrabold">
+        <h2 class="text-xl xl:text-[1.35rem] text-secondary-600 font-extrabold">
           Clientes & experiencias
         </h2>
-        <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"></div>
+        <div
+          class="w-72 md:w-96 xl:w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
+        ></div>
       </div>
     </section>
     <section class="pb-12">
       <div class="swiper clientSwiper">
         <div class="swiper-wrapper">
           <!-- yapstone -->
-          <div class="swiper-slide flex justify-center flex-col">
+          <div
+            class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+          >
             <div class="flex justify-center">
               <img
                 src="yapstone_logo.png"
@@ -446,57 +591,73 @@
               >
                 <img
                   src="comillas-abre.png"
-                  class="absolute left-[14%] top-[21%] w-14"
+                  class="hidden md:flex absolute md:left-0 md:top-[11%] xl:left-[14%] xl:top-[21%] w-14"
                   alt="comillas-01"
                 />
-                <span class="text-center"
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-0"
                   >Yapstone needed integration with BIND for Argentina payments
                   immediately.
                 </span>
-                <span class="text-center mx-80">
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-80">
                   Engaged with Allen Geier's team and they did a splendid job to
                   achieve this quickly. They were able to accommodate the
                   required changes instantly by going above and beyond.
                 </span>
-                <span class="text-center">
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-0">
                   They also brought in their own project manager to manage the
                   team for free.
                 </span>
-                <span class="text-center mx-96">
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-96">
                   Allen was great at communicating in English with us and
                   Spanish with BIND team as well.
                 </span>
-                <span class="text-center">
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-0">
                   Thank you for all your support and helping us integrate with
                   BIND.
                 </span>
                 <img
                   src="comillas-cierre.png"
-                  class="absolute right-[14%] bottom-[21%] w-14"
+                  class="hidden md:flex absolute md:right-0 md:bottom-[11%] xl:right-[14%] xl:bottom-[21%] w-14"
                   alt="comillas-02"
                 />
               </p>
             </div>
             <div class="flex justify-center mt-7">
               <p
-                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
               >
                 Neelima Brungi, IT Manager, USA
               </p>
             </div>
-            <div class="flex items-center justify-center gap-10 mt-16">
+            <div
+              class="flex items-center justify-center gap-10 mt-16 flex-col md:flex-row"
+            >
               <img
                 src="adecash_logo.png"
                 class="w-[4.25rem]"
                 alt="adecash-logo"
               />
-              <img src="andes_logo.jpg" class="w-48" alt="andes-logo" />
-              <img src="avon_logo.png" class="w-44" alt="avon-logo" />
-              <img src="ba_logo.jpg" class="w-40" alt="ba-logo" />
+              <img
+                src="andes_logo.jpg"
+                class="w-48"
+                alt="andes-logo"
+              />
+              <img
+                src="avon_logo.png"
+                class="w-44"
+                alt="avon-logo"
+              />
+              <img
+                src="ba_logo.jpg"
+                class="w-40"
+                alt="ba-logo"
+              />
             </div>
           </div>
           <!-- avon -->
-          <div class="swiper-slide flex justify-center flex-col">
+          <div
+            class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+          >
             <div class="flex justify-center">
               <img
                 src="avon_logo.png"
@@ -510,41 +671,43 @@
               >
                 <img
                   src="comillas-abre.png"
-                  class="absolute left-[13%] top-[12%] w-14"
+                  class="hidden md:flex absolute md:left-0 md:top-[18%] xl:left-[13%] xl:top-[12%] w-14"
                   alt="comillas-01"
                 />
-                <span class="text-center mx-56"
+                <span class="text-center md:mx-20 lg:mx-16 xl:mx-56"
                   >Desde el año 2015, utilizamos a CentraldePagos y su
                   plataforma de sistemas como integrador de canales de pago en
                   efectivo y links de pago con tarjeta de débito.
                 </span>
-                <span class="text-center">
+                <span class="text-center md:mx-20 lg:mx-16 xl:mx-0">
                   Se procesan más de 300M transacciones mensuales en todos los
                   canales de pago.
                 </span>
-                <span class="text-center mx-52">
+                <span class="text-center md:mx-20 lg:mx-16 xl:mx-52">
                   Contamos con servicios webservice de notificaciones de pago y
                   conciliaciones de transacciones ad-hoc integrados a nuestro
                   ERP.
                 </span>
-                <span class="text-center">
+                <span class="text-center md:mx-20 lg:mx-16 xl:mx-0">
                   Nos prestan servicio y soporte a la operación.
                 </span>
                 <img
                   src="comillas-cierre.png"
-                  class="absolute right-[13%] bottom-[11%] w-14"
+                  class="hidden md:flex absolute md:right-0 md:bottom-[18%] xl:right-[13%] xl:bottom-[11%] w-14"
                   alt="comillas-02"
                 />
               </p>
             </div>
             <div class="flex justify-center mt-7">
               <p
-                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
               >
                 Gabriel Marsilli, Cosméticos Avon SACIFI, Argentina
               </p>
             </div>
-            <div class="flex items-center justify-center gap-10 mt-16">
+            <div
+              class="flex items-center justify-center gap-10 md:gap-2 xl:gap-10 mt-16 flex-col md:flex-row"
+            >
               <img
                 src="bancard_logo.jpg"
                 class="w-52"
@@ -568,7 +731,9 @@
             </div>
           </div>
           <!-- natura -->
-          <div class="swiper-slide flex justify-center flex-col">
+          <div
+            class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+          >
             <div class="flex justify-center">
               <img
                 src="LATAM - NATURA.png"
@@ -582,10 +747,10 @@
               >
                 <img
                   src="comillas-abre.png"
-                  class="absolute left-[13%] top-[22%] w-14"
+                  class="hidden md:flex absolute md:left-0 md:top-[22%] xl:left-[13%] xl:top-[22%] w-14"
                   alt="comillas-01"
                 />
-                <span class="text-center mx-64"
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-64"
                   >Utilizamos el Gateway de pago en efectivo de Consultora Argon
                   SRL de manera continua durante más de 4 años. Esta solución
                   tecnológica no solo se encarga de la última etapa de
@@ -600,19 +765,21 @@
                 </span>
                 <img
                   src="comillas-cierre.png"
-                  class="absolute right-[13%] bottom-[21%] w-14"
+                  class="hidden md:flex absolute md:right-0 md:bottom-[22%] xl:right-[13%] xl:bottom-[21%] w-14"
                   alt="comillas-02"
                 />
               </p>
             </div>
             <div class="flex justify-center mt-7">
               <p
-                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
               >
                 Fernanda Dominguez, IT, Natura&Co, Argentina
               </p>
             </div>
-            <div class="flex items-center justify-center gap-12 mt-16">
+            <div
+              class="flex items-center justify-center gap-12 md:gap-4 xl:gap-12 mt-16 flex-col md:flex-row"
+            >
               <img
                 src="bancorio_logo.png"
                 class="w-52"
@@ -628,11 +795,17 @@
                 class="w-48"
                 alt="crypto-logo"
               />
-              <img src="gire_logo.png" class="w-36" alt="gire-logo" />
+              <img
+                src="gire_logo.png"
+                class="w-36"
+                alt="gire-logo"
+              />
             </div>
           </div>
           <!-- adecash -->
-          <div class="swiper-slide flex justify-center flex-col">
+          <div
+            class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+          >
             <div class="flex justify-center">
               <img
                 src="adecash_logo.png"
@@ -646,16 +819,18 @@
               >
                 <img
                   src="comillas-abre.png"
-                  class="absolute left-[13%] top-[13%] w-14"
+                  class="hidden md:flex absolute md:left-0 md:top-[19%] xl:left-[13%] xl:top-[13%] w-14"
                   alt="comillas-01"
                 />
-                <span class="text-center mx-64"
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-64"
                   >Mantuvimos una plática con el equipo de Argon, estábamos en
                   busca de una herramienta y gestionar préstamos de anticipo de
                   haberes a través de la nómina de los empleados. De ahí surgió
                   Adecash. Quiero expresar mi agradecimiento al equipo
                 </span>
-                <span class="text-center mx-[18.5rem]">
+                <span
+                  class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-[18.5rem]"
+                >
                   de Argonglobal.tech; entendieron perfectamente lo que
                   necesitábamos y nos facilitaron todo el proceso, desde el
                   inicio del proyecto hasta la implementación del servicio.
@@ -663,20 +838,26 @@
                 </span>
                 <img
                   src="comillas-cierre.png"
-                  class="absolute right-[13%] bottom-[12%] w-14"
+                  class="hidden md:flex absolute md:right-0 md:bottom-[19%] xl:right-[13%] xl:bottom-[12%] w-14"
                   alt="comillas-02"
                 />
               </p>
             </div>
             <div class="flex justify-center mt-7">
               <p
-                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
               >
                 José Antonio Klimos, Adecash, México
               </p>
             </div>
-            <div class="flex items-center justify-center gap-10 mt-16">
-              <img src="link_logo.png" class="w-14" alt="link-logo" />
+            <div
+              class="flex items-center justify-center gap-10 mt-16 flex-col md:flex-row"
+            >
+              <img
+                src="link_logo.png"
+                class="w-14"
+                alt="link-logo"
+              />
               <img
                 src="metrogas_logo.png"
                 class="w-[7.5rem]"
@@ -695,7 +876,9 @@
             </div>
           </div>
           <!-- bibank -->
-          <div class="swiper-slide flex justify-center flex-col">
+          <div
+            class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+          >
             <div class="flex justify-center">
               <img
                 src="bibank_logo.png"
@@ -709,28 +892,34 @@
               >
                 <img
                   src="comillas-abre.png"
-                  class="absolute left-[14%] bottom-[20%] w-14"
+                  class="hidden md:flex absolute md:left-0 xl:left-[14%] xl:bottom-[20%] w-14"
                   alt="comillas-01"
                 />
-                <span class="text-center mx-[17rem]"
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-[17rem]"
                   >Texto experiencia bibank pendiente a recibir para agregar.
                 </span>
                 <img
                   src="comillas-cierre.png"
-                  class="absolute right-[14%] top-[20%] w-14"
+                  class="hidden md:flex absolute md:right-0 xl:right-[14%] xl:top-[20%] w-14"
                   alt="comillas-02"
                 />
               </p>
             </div>
             <div class="flex justify-center mt-7">
               <p
-                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
               >
                 Gustavo Merlo, Bibank, Argentina
               </p>
             </div>
-            <div class="flex items-center justify-center gap-10 mt-16">
-              <img src="link_logo.png" class="w-14" alt="link-logo" />
+            <div
+              class="flex items-center justify-center gap-10 mt-16 flex-col md:flex-row"
+            >
+              <img
+                src="link_logo.png"
+                class="w-14"
+                alt="link-logo"
+              />
               <img
                 src="metrogas_logo.png"
                 class="w-[7.5rem]"
@@ -749,7 +938,9 @@
             </div>
           </div>
           <!-- sudameris -->
-          <div class="swiper-slide flex justify-center flex-col">
+          <div
+            class="swiper-slide flex justify-center flex-col px-6 md:px-20 xl:px-0"
+          >
             <div class="flex justify-center">
               <img
                 src="sudameris_logo.png"
@@ -763,33 +954,35 @@
               >
                 <img
                   src="comillas-abre.png"
-                  class="absolute left-[14%] top-[-6%] w-14"
+                  class="hidden md:flex absolute md:left-0 md:top-[13%] xl:left-[14%] xl:top-[-6%] w-14"
                   alt="comillas-01"
                 />
-                <span class="text-center mx-[19rem]"
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-[19rem]"
                   >Trabajamos con Argón para diseñar una herramienta a medida
                   para nuestros clientes con el objetivo de brindar una
                   experiencia diferente y facilitar la operativa diaria.
                 </span>
-                <span class="text-center">
+                <span class="text-center md:mx-20 lg:mx-[5.5rem] xl:mx-0">
                   Esta herramienta nos permite incorporar nuevas soluciones
                   según demanda.
                 </span>
                 <img
                   src="comillas-cierre.png"
-                  class="absolute right-[14%] bottom-[-8%] w-14"
+                  class="hidden md:flex absolute md:right-0 md:bottom-[13%] xl:right-[14%] xl:bottom-[-8%] w-14"
                   alt="comillas-02"
                 />
               </p>
             </div>
             <div class="flex justify-center mt-7">
               <p
-                class="text-[1.2rem] leading-[1.7rem] font-[800] text-primary-700"
+                class="text-[1.2rem] text-center md:text-start leading-[1.7rem] font-[800] text-primary-700"
               >
                 Dulce Ramirez, Sudameris, Paraguay
               </p>
             </div>
-            <div class="flex items-center justify-center gap-10 mt-16">
+            <div
+              class="flex items-center justify-center gap-10 md:gap-8 xl:gap-10 mt-16 flex-col md:flex-row"
+            >
               <img
                 src="bibank_logo.png"
                 class="w-36"
@@ -805,7 +998,11 @@
                 class="w-[12.5rem]"
                 alt="galicia-logo"
               />
-              <img src="lanus_logo.png" class="w-40" alt="lanus-logo" />
+              <img
+                src="lanus_logo.png"
+                class="w-40"
+                alt="lanus-logo"
+              />
             </div>
           </div>
         </div>
@@ -815,38 +1012,42 @@
     <!-- START IMAGE BANNER -->
     <section class="relative">
       <img src="banner-ppal.jpg" alt="" />
-      <div class="absolute right-16 bottom-14 flex flex-col gap-2">
+      <div
+        class="absolute right-4 bottom-6 xl:right-16 xl:bottom-14 flex flex-col gap-2"
+      >
         <a
           href=""
-          class="flex items-center justify-center w-[3.25rem] h-[3.25rem] rounded-full bg-secondary-600 text-white"
+          class="flex items-center justify-center w-9 h-9 md:w-[3.25rem] md:h-[3.25rem] rounded-full bg-secondary-600 text-white"
         >
-          <span class="text-5xl font-[300]">+</span>
+          <span class="text-3xl md:text-5xl font-[300]">+</span>
         </a>
       </div>
     </section>
     <!-- END IMAGE BANNER -->
     <!-- START OF ARGON TEAM -->
     <section class="bg-secondary-10 flex flex-col items-center pb-10 relative">
-      <div class="flex flex-col gap-7 items-center justify-center py-8">
+      <div
+        class="flex flex-col gap-7 items-center justify-center py-8 lg:py-6 xl:py-8"
+      >
         <h2 class="text-[1.3rem] text-secondary-600 font-extrabold">
           Equipo Argón
         </h2>
         <div
-          class="w-[29.5rem] lg:w-[26rem] xl:w-[36rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
+          class="w-72 md:w-96 lg:w-[26rem] xl:w-[36rem] bg-primary-700 bg-opacity-80 h-[1px]"
         ></div>
       </div>
       <div class="pt-2">
         <p
           class="flex flex-col items-center justify-center text-[1.1rem] text-primary-700 font-[400]"
         >
-          <span class="text-center mx-64"
+          <span class="text-center mx-5 xl:mx-64"
             >Generamos productos que permiten resolver problemas de integración,
             plataformas digitales y transaccionales con apoyo continuo a
             nuestros clientes.
           </span>
         </p>
       </div>
-      <div class="grid grid-cols-4 gap-12 mt-14">
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mt-14">
         <div class="flex flex-col items-center justify-center">
           <img
             src="allen_byn_1.png"
@@ -861,7 +1062,11 @@
               <span class="text-secondary-600 text-base">CEO</span>
             </p>
             <a href="https://www.linkedin.com/in/ricardogeier/" target="_blank">
-              <img src="linkedin.png" class="w-7" alt="linkedin" />
+              <img
+                src="linkedin.png"
+                class="w-7"
+                alt="linkedin"
+              />
             </a>
           </div>
         </div>
@@ -882,7 +1087,11 @@
               href="https://www.linkedin.com/in/lickarinaggiusti/"
               target="_blank"
             >
-              <img src="linkedin.png" class="w-7" alt="linkedin" />
+              <img
+                src="linkedin.png"
+                class="w-7"
+                alt="linkedin"
+              />
             </a>
           </div>
         </div>
@@ -902,34 +1111,42 @@
               >
             </p>
             <a href="">
-              <img src="linkedin.png" class="w-7" alt="linkedin" />
+              <img
+                src="linkedin.png"
+                class="w-7"
+                alt="linkedin"
+              />
             </a>
           </div>
         </div>
         <div class="flex flex-col items-center justify-center">
           <img
-            src="gustavo_byn.png"
+            src="fernando_byn.png"
             class="bg-white rounded-full w-[10.5rem]"
             alt="argon-data-analyst"
           />
-          <div class="flex flex-col items-center justify-center gap-2 mt-6">
+          <div class="flex flex-col items-center justify-center gap-1.5 mt-6">
             <p
               class="flex flex-col justify-center items-center text-primary-700 text-base leading-[0.75rem]"
             >
-              <span class="font-extrabold">Ing. Gustavo M. Giusti</span>
-              <span class="text-secondary-600 text-base"
-                >Data Analyst Head</span
-              >
+              <span class="font-extrabold">Fernando Spitz</span>
+              <span class="text-secondary-600 text-base">CTO</span>
             </p>
-            <a href="">
-              <img src="linkedin.png" class="w-7" alt="linkedin" />
+            <a href="https://www.linkedin.com/in/fernando-j-spitz-3a2199b/">
+              <img
+                src="linkedin.png"
+                class="w-7"
+                alt="linkedin"
+              />
             </a>
           </div>
         </div>
       </div>
-      <div class="absolute right-16 bottom-12 flex flex-col gap-2">
+      <div
+        class="absolute right-8 bottom-6 md:right-16 md:bottom-12 lg:right-8 lg:bottom-6 flex flex-col gap-2"
+      >
         <a
-          href=""
+          href="equipo-argon.html"
           class="flex items-center justify-center w-[3.25rem] h-[3.25rem] rounded-full bg-white text-secondary-600"
         >
           <span class="text-5xl font-[300]">+</span>
@@ -940,74 +1157,107 @@
     <!-- START NEWS -->
     <section class="py-7">
       <div class="flex flex-col gap-6 items-center justify-center pb-7">
-        <h2 class="text-[1.35rem] text-secondary-600 font-extrabold">News</h2>
-        <div class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"></div>
+        <h2 class="text-xl xl:text-[1.35rem] text-secondary-600 font-extrabold">
+          News
+        </h2>
+        <div
+          class="w-72 md:w-96 xl:w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
+        ></div>
       </div>
-      <div class="grid grid-cols-2 gap-9 mt-5 mx-16">
-        <div class="flex flex-col bg-gray-200 px-6 py-9 relative">
+      <div
+        class="grid grid-cols-1 lg:grid-cols-2 gap-10 my-9 mx-5 md:mx-10 lg:mx-20 lg:mx-12 xl:mx-20"
+      >
+        <div class="flex flex-col bg-gray-200 px-6 py-9">
           <div class="flex flex-col">
             <p class="text-secondary-600 font-extrabold text-3xl">
               Noticia No.1
             </p>
-            <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
+            <p class="text-primary-700 font-[300] text-3xl">
+              NOS SUMAMOS A CISof
+            </p>
           </div>
-          <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
-          <div class="absolute right-9 bottom-44 flex flex-col gap-2">
-            <a
-              href=""
-              class="flex items-center justify-center w-7 h-7 rounded-full bg-secondary-600 text-white"
-            >
-              <span class="text-3xl font-[300]">+</span>
-            </a>
+          <div class="relative">
+            <img
+              src="e wallet.jpg"
+              class="mt-10 mb-5 w-full"
+              alt=""
+            />
+            <div class="absolute right-4 bottom-8 flex flex-col gap-2">
+              <a
+                href="https://www.linkedin.com/posts/argonglobaltech_innovacion-fintech-pagosdigitales-activity-7163239195883376640-7Ez1?utm_source=share&utm_medium=member_desktop"
+                class="flex items-center justify-center w-7 h-7 rounded-full bg-secOrange-600 text-white"
+              >
+                <span class="text-3xl font-[300]">+</span>
+              </a>
+            </div>
           </div>
-          <div class="flex gap-6">
-            <p class="text-secondary-600 font-extrabold text-base">06/12/23</p>
+          <div class="flex gap-6 flex-col md:flex-row">
+            <p class="text-secondary-600 font-extrabold text-base">13/02/24</p>
             <div class="flex flex-col gap-3">
               <p
                 class="text-primary-700 font-extrabold text-base leading-[1.15]"
               >
-                La asunción de Javier Milei: los detalles del paquete de
-                reformas que enviarán al Congreso
+                ARGON GLOBAL TECH se suma como socio a la CAMARA PARAGUAYA DE LA
+                INSDUSTRIA DEL SOFTWARE.
               </p>
-              <p class="text-primary-700 font-[400] text-xs leading-tight">
-                Cómo serán las leyes para recortar gastos, reformas impositivas,
-                laborales, entre otras. El elegido por el nuevo Presidente para
-                presidir el Senado reveló que el lunes enviarán el ambicioso
-                plan de reformas al Congreso.
+              <p class="text-primary-700 font-[400] text-sm leading-tight">
+                En el marco de un programa de crecimiento regional sostenido, es
+                fundamental generar network que fomente el desarrollo y el
+                crecimiento. Uno de nuestros desafíos es convertirnos en agentes
+                activos con impacto en los mercados en los que operamos y
+                enfocamos todos nuestros recursos y know how para logarlo.
+                <br />
+                <span
+                  >Si querés saber más, visitá nuestro
+                  <a
+                    href="https://www.linkedin.com/company/argonglobaltech/posts/?feedView=all"
+                    class="text-secondary-600 underline font-semibold"
+                    >linkedin</a
+                  >.</span
+                >
               </p>
             </div>
           </div>
         </div>
-        <div class="flex flex-col bg-gray-200 px-6 py-9 relative">
+        <div class="flex flex-col bg-gray-200 px-6 py-9">
           <div class="flex flex-col">
             <p class="text-secondary-600 font-extrabold text-3xl">
               Noticia No.2
             </p>
-            <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
+            <p class="text-primary-700 font-[300] text-3xl">
+              ADECASH SE SUMA A ARGON
+            </p>
           </div>
-          <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
-          <div class="absolute right-9 bottom-44 flex flex-col gap-2">
-            <a
-              href=""
-              class="flex items-center justify-center w-7 h-7 rounded-full bg-secondary-600 text-white"
-            >
-              <span class="text-3xl font-[300]">+</span>
-            </a>
+          <div class="relative">
+            <img
+              src="e wallet.jpg"
+              class="mt-10 mb-5 w-full"
+              alt=""
+            />
+            <div class="absolute right-4 bottom-8 flex flex-col gap-2">
+              <a
+                href=""
+                class="flex items-center justify-center w-7 h-7 rounded-full bg-secOrange-600 text-white"
+              >
+                <span class="text-3xl font-[300]">+</span>
+              </a>
+            </div>
           </div>
-          <div class="flex gap-6">
-            <p class="text-secondary-600 font-extrabold text-base">06/12/23</p>
+          <div class="flex gap-6 flex-col md:flex-row">
+            <p class="text-secondary-600 font-extrabold text-base">13/02/24</p>
             <div class="flex flex-col gap-3">
               <p
                 class="text-primary-700 font-extrabold text-base leading-[1.15]"
               >
-                La asunción de Javier Milei: los detalles del paquete de
-                reformas que enviarán al Congreso
+                Le damos la bienvenida a ADECASH – MEXICO
               </p>
-              <p class="text-primary-700 font-[400] text-xs leading-tight">
-                Cómo serán las leyes para recortar gastos, reformas impositivas,
-                laborales, entre otras. El elegido por el nuevo Presidente para
-                presidir el Senado reveló que el lunes enviarán el ambicioso
-                plan de reformas al Congreso.
+              <p class="text-primary-700 font-[400] text-sm leading-tight">
+                En el mes de febrero salimos al mercado con un nuevo servicio
+                diseñado a medida para ADECASH, UN CORE DE PRESTAMOS que genera
+                una experiencia única, ágil y simple para la solicitud de
+                adelanto de haberes. Se trata de un producto para un segmento
+                cerrado y escalable. <br />
+                Bienvenidos a la comunidad ARGON GLOBAL TECH
               </p>
             </div>
           </div>
@@ -1018,10 +1268,18 @@
     <!-- START FOOTER -->
     <footer class="bg-primary-700 flex flex-col text-white py-4 pb-8">
       <a href="/">
-        <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
+        <img
+          src="icono-negativo.png"
+          class="w-[5.5rem] mx-11"
+          alt=""
+        />
       </a>
-      <div class="flex items-start justify-between mx-16">
-        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+      <div
+        class="flex items-start justify-between mx-16 flex-col md:flex-row gap-8 md:gap-0"
+      >
+        <div
+          class="flex gap-8 md:gap-36 text-xs font-[200] leading-[1.15rem] flex-col md:flex-row"
+        >
           <div class="flex flex-col">
             <div class="">
               <ul>
@@ -1057,7 +1315,11 @@
             <li>
               <div class="flex items-center gap-3">
                 <a href="mailto:info@argonglobal.tech">
-                  <img src="mail-icon.png" class="w-[2.15rem]" alt="" />
+                  <img
+                    src="mail-icon.png"
+                    class="w-[2.15rem]"
+                    alt=""
+                  />
                 </a>
                 <a
                   href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
@@ -1117,7 +1379,7 @@
         spaceBetween: 30,
         // effect: "fade",
         autoplay: {
-          delay: 3500,
+          delay: 8000,
           disableOnInteraction: false,
         },
         pagination: {
@@ -1131,7 +1393,7 @@
         slidesPerView: 1,
         spaceBetween: 30,
         autoplay: {
-          delay: 3500,
+          delay: 8000,
           disableOnInteraction: false,
         },
       });

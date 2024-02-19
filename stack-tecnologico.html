@@ -56,24 +56,64 @@
       .swiper-pagination-bullet-active {
         background-color: #061433;
       }
+
+      @media (max-width: 1024px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: 3rem;
+          left: -120px;
+        }
+      }
+
+      @media (max-width: 820px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: 1rem;
+          left: -31px;
+        }
+      }
+
+      @media (max-width: 768px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: 2rem;
+          left: -13px;
+        }
+      }
+
+      @media (max-width: 640px) {
+        .swiper-horizontal > .swiper-pagination-bullets,
+        .swiper-pagination-bullets.swiper-pagination-horizontal,
+        .swiper-pagination-custom,
+        .swiper-pagination-fraction {
+          bottom: 0;
+          left: 0;
+        }
+      }
     </style>
   </head>
 
   <body class="font-manrope appearance-none">
     <!-- START OF NAVBAR -->
     <nav
-      class="w-full flex justify-between items-start px-11 bg-navbar bg-cover bg-no-repeat"
+      class="w-full flex justify-center md:justify-between items-center md:items-start md:px-11 bg-primary-700 md:bg-navbar md:bg-cover md:bg-no-repeat"
     >
       <a href="/">
         <img
-          class="w-80"
+          class="w-72 md:w-80"
           src="logo_argon_sin_fondo_texto_blanco.png"
           alt="logo-argon"
         />
       </a>
-      <div class="pt-16 flex flex-col">
+      <div class="md:pt-16 flex flex-col">
         <div class="flex items-center gap-3 mr-3">
-          <div class="flex items-center">
+          <div class="hidden md:flex items-center">
             <div class="relative">
               <input
                 type="search"
@@ -83,29 +123,67 @@
               />
               <img
                 src="search-icon.png"
-                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                class="w-[1.35rem] md:[1.1rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1 md:top-[0.15rem]"
                 alt=""
               />
             </div>
           </div>
           <button type="button" class="menu-btn focus:outline-none">
-            <img src="menu-icon.png" class="w-8" alt="">
+            <img src="menu-icon.png" class="w-8" alt="" />
           </button>
         </div>
         <div class="menu hidden text-end">
           <div
-            class="flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
+            class="hidden md:flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
           >
             <a href="quienes-somos.html">Quiénes somos</a>
-            <a href="productos-y-servicios.html"
-              >Productos & servicios</a
-            >
+            <a href="productos-y-servicios.html">Productos & servicios</a>
             <a href="stack-tecnologico.html">Stack tecnológico</a>
             <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
             <a href="equipo-argon.html">Equipo Argón</a>
             <a href="habla-con-argon.html">Hablá con Argón</a>
             <a href="">Campus Argón</a>
             <a href="news.html">News</a>
+          </div>
+          <div
+            class="absolute right-0 top-[10.1rem] flex flex-col text-white font-[300] text-sm md:hidden"
+          >
+            <a
+              href="quienes-somos.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Quiénes somos</a
+            >
+            <a
+              href="productos-y-servicios.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Productos & servicios</a
+            >
+            <a
+              href="stack-tecnologico.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Stack tecnológico</a
+            >
+            <a
+              href="clientes-y-experiencias.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Clientes & experiencias</a
+            >
+            <a
+              href="equipo-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Equipo Argón</a
+            >
+            <a
+              href="habla-con-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Hablá con Argón</a
+            >
+            <a href="" class="p-4 bg-primary-700 border border-white"
+              >Campus Argón</a
+            >
+            <a href="news.html" class="p-4 bg-primary-700 border border-white"
+              >News</a
+            >
           </div>
         </div>
       </div>
@@ -118,12 +196,12 @@
             Stack tecnológico
           </h2>
           <div
-            class="w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
+            class="w-72 md:w-96 lg:w-[29.5rem] bg-primary-700 bg-opacity-80 h-[0.1rem]"
           ></div>
         </div>
         <div class="pt-2">
           <p
-            class="flex flex-col items-center justify-center text-base text-primary-700 font-[400] leading-snug"
+            class="flex flex-col items-center justify-center text-base text-primary-700 font-[400] leading-snug px-10 md:px-0"
           >
             <span class="text-center"
               >En Argón Global Tech planificamos nuestros productos con</span
@@ -144,7 +222,7 @@
         </div>
       </section>
       <div
-        class="py-6 flex items-center bg-secondary-10 text-primary-700 text-[1.2rem] leading-[1.6rem] font-[400]"
+        class="py-6 flex items-center bg-secondary-10 text-primary-700 text-lg md:text-xl lg:text-[1.2rem] leading-[1.6rem] font-[400]"
       >
         <div class="swiper mySwiper py-3">
           <h2
@@ -153,61 +231,100 @@
             Impacto
           </h2>
           <div class="swiper-wrapper">
-            <div class="swiper-slide px-36">
-              <div class="flex items-center justify-center gap-10">
-                <img src="stack-01.png" class="w-60" alt="paso-1" />
+            <div class="swiper-slide px-5 xl:px-36">
+              <div
+                class="flex items-center justify-center gap-10 md:gap-[3.25rem] lg:gap-10 flex-col md:flex-row"
+              >
+                <img
+                  src="stack-01.png"
+                  class="hidden md:flex md:w-[17rem] lg:w-72 xl:w-60"
+                  alt="paso-1"
+                />
+                <p
+                  class="text-[8rem] text-secondary-600 font-extrabold py-10 md:hidden"
+                >
+                  01
+                </p>
                 <div class="flex flex-col pb-11">
-                  <p class="text-xl flex flex-col font-extrabold">
-                    <span
+                  <p class="flex flex-col font-extrabold">
+                    <span class="text-center md:text-start md:pr-24 lg:pr-0"
                       >Reduce costos adicionales en nuevos desarrollos,
                       y/o</span
                     >
-                    <span>adecuaciones de servicios</span>
+                    <span class="text-center md:text-start"
+                      >adecuaciones de servicios</span
+                    >
                   </p>
-                  <span
+                  <span class="text-center md:text-start"
                     >Estamos convencidos que trabajar con metodologías ágiles
                     que</span
                   >
-                  <span
+                  <span class="text-center md:text-start"
                     >habiliten la creación de un PMV (Producto mínimo viable)
                     ayuda a</span
                   >
-                  <span
+                  <span class="text-center md:text-start"
                     >evaluar la performance del servicio desarrollado para
                     aplicar los ajustes</span
                   >
-                  <span>necesarios, con bajo impacto económico.</span>
+                  <span class="text-center md:text-start"
+                    >necesarios, con bajo impacto económico.</span
+                  >
                 </div>
               </div>
             </div>
-            <div class="swiper-slide px-36">
-              <div class="flex items-center justify-center gap-6">
-                <img src="stack-02.png" class="w-60" alt="paso-2" />
+            <div class="swiper-slide px-5 xl:px-36">
+              <div
+                class="flex items-center justify-center gap-10 md:gap-[3.25rem] lg:gap-6 flex-col md:flex-row"
+              >
+                <img
+                  src="stack-02.png"
+                  class="hidden md:flex md:w-[17rem] lg:w-72 xl:w-60"
+                  alt="paso-2"
+                />
+                <p
+                  class="text-[8rem] text-secondary-600 font-extrabold py-10 md:hidden"
+                >
+                  02
+                </p>
                 <div class="flex flex-col pb-[4.25rem]">
-                  <p class="font-extrabold">
+                  <p class="font-extrabold text-center md:text-start">
                     Reduce el time to market de nuevos servicios
                   </p>
-                  <span
+                  <span class="text-center md:text-start"
                     >Una etapa relevante en nuestro flow es el DISCOVERY
                     inicial,</span
                   >
-                  <span
+                  <span class="text-center md:text-start"
                     >dónde trabajamos en forma conjunta con el cliente en el
                     diagnóstico,</span
                   >
-                  <span
+                  <span class="text-center md:text-start"
                     >planificación, y diseño del pipeline, así como
                     requerimientos de</span
                   >
-                  <span>acompañamiento de nuestros profesionales.</span>
+                  <span class="text-center md:text-start"
+                    >acompañamiento de nuestros profesionales.</span
+                  >
                 </div>
               </div>
             </div>
-            <div class="swiper-slide pr-[10.5rem]">
-              <div class="flex items-center justify-center gap-6">
-                <img src="stack-03.png" class="w-60" alt="paso-3" />
+            <div class="swiper-slide md:pl-4 lg:pr-44 xl:pr-[11.5rem]">
+              <div
+                class="flex items-center justify-center gap-10 md:gap-[3.25rem] lg:gap-6 flex-col md:flex-row"
+              >
+                <img
+                  src="stack-03.png"
+                  class="hidden md:flex md:w-[17rem] lg:w-72 xl:w-60"
+                  alt="paso-3"
+                />
+                <p
+                  class="text-[8rem] text-secondary-600 font-extrabold py-10 md:hidden"
+                >
+                  03
+                </p>
                 <div class="flex flex-col pb-[10.5rem]">
-                  <p class="font-extrabold pr-4">
+                  <p class="font-extrabold lg:pr-4 text-center md:text-start">
                     Facilita la escalabilidad y la interoperabilidad
                   </p>
                 </div>
@@ -225,8 +342,12 @@
       <a href="/">
         <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
       </a>
-      <div class="flex items-start justify-between mx-16">
-        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+      <div
+        class="flex items-start justify-between mx-16 flex-col md:flex-row gap-8 md:gap-0"
+      >
+        <div
+          class="flex gap-8 md:gap-36 text-xs font-[200] leading-[1.15rem] flex-col md:flex-row"
+        >
           <div class="flex flex-col">
             <div class="">
               <ul>
@@ -245,9 +366,15 @@
               <ul>
                 <li class="text-sm font-[600]">Navegación</li>
                 <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li>
+                  <a href="productos-y-servicios.html">Productos & servicios</a>
+                </li>
                 <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
-                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li>
+                  <a href="clientes-y-experiencias.html"
+                    >Clientes & experiencias</a
+                  >
+                </li>
                 <li><a href="equipo-argon.html">Equipo Argón</a></li>
                 <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
                 <li><a href="#">Campus Argón</a></li>
@@ -267,11 +394,7 @@
                 <a
                   href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
                 >
-                  <img
-                    src="linkedin-logo.png"
-                    class="w-[2.1rem]"
-                    alt=""
-                  />
+                  <img src="linkedin-logo.png" class="w-[2.1rem]" alt="" />
                 </a>
               </div>
             </li>
@@ -326,7 +449,7 @@
       var swiper = new Swiper(".mySwiper", {
         spaceBetween: 30,
         autoplay: {
-          delay: 3500,
+          delay: 8000,
           disableOnInteraction: false,
         },
         pagination: {

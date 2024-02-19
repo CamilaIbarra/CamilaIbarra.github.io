@@ -35,18 +35,18 @@
   <body class="font-manrope appearance-none">
     <!-- START OF NAVBAR -->
     <nav
-      class="w-full flex justify-between items-start px-11 bg-navbar bg-cover bg-no-repeat"
+      class="w-full flex justify-center md:justify-between items-center md:items-start md:px-11 bg-primary-700 md:bg-navbar md:bg-cover md:bg-no-repeat"
     >
       <a href="/">
         <img
-          class="w-80"
+          class="w-72 md:w-80"
           src="logo_argon_sin_fondo_texto_blanco.png"
           alt="logo-argon"
         />
       </a>
-      <div class="pt-16 flex flex-col">
+      <div class="md:pt-16 flex flex-col">
         <div class="flex items-center gap-3 mr-3">
-          <div class="flex items-center">
+          <div class="hidden md:flex items-center">
             <div class="relative">
               <input
                 type="search"
@@ -56,23 +56,21 @@
               />
               <img
                 src="search-icon.png"
-                class="w-[1.35rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1"
+                class="w-[1.35rem] md:[1.1rem] lg:w-[1.1rem] xl:w-[1.15rem] absolute left-2 top-1 md:top-[0.15rem]"
                 alt=""
               />
             </div>
           </div>
           <button type="button" class="menu-btn focus:outline-none">
-            <img src="menu-icon.png" class="w-8" alt="">
+            <img src="menu-icon.png" class="w-8" alt="" />
           </button>
         </div>
         <div class="menu hidden text-end">
           <div
-            class="flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
+            class="hidden md:flex flex-col text-white font-[200] text-xs p-4 pb-6 pl-0"
           >
             <a href="quienes-somos.html">Quiénes somos</a>
-            <a href="productos-y-servicios.html"
-              >Productos & servicios</a
-            >
+            <a href="productos-y-servicios.html">Productos & servicios</a>
             <a href="stack-tecnologico.html">Stack tecnológico</a>
             <a href="clientes-y-experiencias.html">Clientes & experiencias</a>
             <a href="equipo-argon.html">Equipo Argón</a>
@@ -80,37 +78,106 @@
             <a href="">Campus Argón</a>
             <a href="news.html">News</a>
           </div>
+          <div
+            class="absolute right-0 top-[10.1rem] flex flex-col text-white font-[300] text-sm md:hidden"
+          >
+            <a
+              href="quienes-somos.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Quiénes somos</a
+            >
+            <a
+              href="productos-y-servicios.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Productos & servicios</a
+            >
+            <a
+              href="stack-tecnologico.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Stack tecnológico</a
+            >
+            <a
+              href="clientes-y-experiencias.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Clientes & experiencias</a
+            >
+            <a
+              href="equipo-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Equipo Argón</a
+            >
+            <a
+              href="habla-con-argon.html"
+              class="p-4 bg-primary-700 border border-white"
+              >Hablá con Argón</a
+            >
+            <a href="" class="p-4 bg-primary-700 border border-white"
+              >Campus Argón</a
+            >
+            <a href="news.html" class="p-4 bg-primary-700 border border-white"
+              >News</a
+            >
+          </div>
         </div>
       </div>
     </nav>
     <!-- END OF NAVBAR -->
     <div class="">
       <section>
-        <div class="grid grid-cols-2 gap-10 my-9 mx-20">
+        <div
+          class="grid grid-cols-1 lg:grid-cols-2 gap-10 my-9 mx-5 md:mx-10 lg:mx-20 lg:mx-12 xl:mx-20"
+        >
           <div class="flex flex-col bg-gray-200 px-6 py-9">
             <div class="flex flex-col">
               <p class="text-secondary-600 font-extrabold text-3xl">
                 Noticia No.1
               </p>
-              <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
+              <p class="text-primary-700 font-[300] text-3xl">
+                NOS SUMAMOS A CISof
+              </p>
             </div>
-            <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
-            <div class="flex gap-6">
+            <div class="">
+              <img
+                src="e wallet.jpg"
+                class="mt-10 mb-5 w-full"
+                alt=""
+              />
+              <div class="hidden absolute right-4 bottom-8 flex flex-col gap-2">
+                <a
+                  href="https://www.linkedin.com/posts/argonglobaltech_innovacion-fintech-pagosdigitales-activity-7163239195883376640-7Ez1?utm_source=share&utm_medium=member_desktop"
+                  class="flex items-center justify-center w-7 h-7 rounded-full bg-secOrange-600 text-white"
+                >
+                  <span class="text-3xl font-[300]">+</span>
+                </a>
+              </div>
+            </div>
+            <div class="flex gap-6 flex-col md:flex-row">
               <p class="text-secondary-600 font-extrabold text-base">
-                06/12/23
+                13/02/24
               </p>
               <div class="flex flex-col gap-3">
                 <p
                   class="text-primary-700 font-extrabold text-base leading-[1.15]"
                 >
-                  La asunción de Javier Milei: los detalles del paquete de
-                  reformas que enviarán al Congreso
+                  ARGON GLOBAL TECH se suma como socio a la CAMARA PARAGUAYA DE
+                  LA INSDUSTRIA DEL SOFTWARE.
                 </p>
-                <p class="text-primary-700 font-[400] text-xs leading-tight">
-                  Cómo serán las leyes para recortar gastos, reformas
-                  impositivas, laborales, entre otras. El elegido por el nuevo
-                  Presidente para presidir el Senado reveló que el lunes
-                  enviarán el ambicioso plan de reformas al Congreso.
+                <p class="text-primary-700 font-[400] text-sm leading-tight">
+                  En el marco de un programa de crecimiento regional sostenido,
+                  es fundamental generar network que fomente el desarrollo y el
+                  crecimiento. Uno de nuestros desafíos es convertirnos en
+                  agentes activos con impacto en los mercados en los que
+                  operamos y enfocamos todos nuestros recursos y know how para
+                  logarlo.
+                  <br />
+                  <span
+                    >Si querés saber más, visitá nuestro
+                    <a
+                      href="https://www.linkedin.com/company/argonglobaltech/posts/?feedView=all"
+                      class="text-secondary-600 underline font-semibold"
+                      >linkedin</a
+                    >.</span
+                  >
                 </p>
               </div>
             </div>
@@ -120,137 +187,42 @@
               <p class="text-secondary-600 font-extrabold text-3xl">
                 Noticia No.2
               </p>
-              <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
-            </div>
-            <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
-            <div class="flex gap-6">
-              <p class="text-secondary-600 font-extrabold text-base">
-                06/12/23
+              <p class="text-primary-700 font-[300] text-3xl">
+                ADECASH SE SUMA A ARGON
               </p>
-              <div class="flex flex-col gap-3">
-                <p
-                  class="text-primary-700 font-extrabold text-base leading-[1.15]"
+            </div>
+            <div class="">
+              <img
+                src="e wallet.jpg"
+                class="mt-10 mb-5 w-full"
+                alt=""
+              />
+              <div class="hidden absolute right-4 bottom-8 flex flex-col gap-2">
+                <a
+                  href=""
+                  class="flex items-center justify-center w-7 h-7 rounded-full bg-secOrange-600 text-white"
                 >
-                  La asunción de Javier Milei: los detalles del paquete de
-                  reformas que enviarán al Congreso
-                </p>
-                <p class="text-primary-700 font-[400] text-xs leading-tight">
-                  Cómo serán las leyes para recortar gastos, reformas
-                  impositivas, laborales, entre otras. El elegido por el nuevo
-                  Presidente para presidir el Senado reveló que el lunes
-                  enviarán el ambicioso plan de reformas al Congreso.
-                </p>
+                  <span class="text-3xl font-[300]">+</span>
+                </a>
               </div>
             </div>
-          </div>
-          <div class="flex flex-col bg-gray-200 px-6 py-9">
-            <div class="flex flex-col">
-              <p class="text-secondary-600 font-extrabold text-3xl">
-                Noticia No.1
-              </p>
-              <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
-            </div>
-            <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
-            <div class="flex gap-6">
+            <div class="flex gap-6 flex-col md:flex-row">
               <p class="text-secondary-600 font-extrabold text-base">
-                06/12/23
+                13/02/24
               </p>
               <div class="flex flex-col gap-3">
                 <p
                   class="text-primary-700 font-extrabold text-base leading-[1.15]"
                 >
-                  La asunción de Javier Milei: los detalles del paquete de
-                  reformas que enviarán al Congreso
+                  Le damos la bienvenida a ADECASH – MEXICO
                 </p>
-                <p class="text-primary-700 font-[400] text-xs leading-tight">
-                  Cómo serán las leyes para recortar gastos, reformas
-                  impositivas, laborales, entre otras. El elegido por el nuevo
-                  Presidente para presidir el Senado reveló que el lunes
-                  enviarán el ambicioso plan de reformas al Congreso.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col bg-gray-200 px-6 py-9">
-            <div class="flex flex-col">
-              <p class="text-secondary-600 font-extrabold text-3xl">
-                Noticia No.2
-              </p>
-              <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
-            </div>
-            <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
-            <div class="flex gap-6">
-              <p class="text-secondary-600 font-extrabold text-base">
-                06/12/23
-              </p>
-              <div class="flex flex-col gap-3">
-                <p
-                  class="text-primary-700 font-extrabold text-base leading-[1.15]"
-                >
-                  La asunción de Javier Milei: los detalles del paquete de
-                  reformas que enviarán al Congreso
-                </p>
-                <p class="text-primary-700 font-[400] text-xs leading-tight">
-                  Cómo serán las leyes para recortar gastos, reformas
-                  impositivas, laborales, entre otras. El elegido por el nuevo
-                  Presidente para presidir el Senado reveló que el lunes
-                  enviarán el ambicioso plan de reformas al Congreso.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col bg-gray-200 px-6 py-9">
-            <div class="flex flex-col">
-              <p class="text-secondary-600 font-extrabold text-3xl">
-                Noticia No.1
-              </p>
-              <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
-            </div>
-            <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
-            <div class="flex gap-6">
-              <p class="text-secondary-600 font-extrabold text-base">
-                06/12/23
-              </p>
-              <div class="flex flex-col gap-3">
-                <p
-                  class="text-primary-700 font-extrabold text-base leading-[1.15]"
-                >
-                  La asunción de Javier Milei: los detalles del paquete de
-                  reformas que enviarán al Congreso
-                </p>
-                <p class="text-primary-700 font-[400] text-xs leading-tight">
-                  Cómo serán las leyes para recortar gastos, reformas
-                  impositivas, laborales, entre otras. El elegido por el nuevo
-                  Presidente para presidir el Senado reveló que el lunes
-                  enviarán el ambicioso plan de reformas al Congreso.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div class="flex flex-col bg-gray-200 px-6 py-9">
-            <div class="flex flex-col">
-              <p class="text-secondary-600 font-extrabold text-3xl">
-                Noticia No.2
-              </p>
-              <p class="text-primary-700 font-[300] text-3xl">Pequeña bajada</p>
-            </div>
-            <img src="e wallet.jpg" class="mt-10 mb-5" alt="" />
-            <div class="flex gap-6">
-              <p class="text-secondary-600 font-extrabold text-base">
-                06/12/23
-              </p>
-              <div class="flex flex-col gap-3">
-                <p
-                  class="text-primary-700 font-extrabold text-base leading-[1.15]"
-                >
-                  La asunción de Javier Milei: los detalles del paquete de
-                  reformas que enviarán al Congreso
-                </p>
-                <p class="text-primary-700 font-[400] text-xs leading-tight">
-                  Cómo serán las leyes para recortar gastos, reformas
-                  impositivas, laborales, entre otras. El elegido por el nuevo
-                  Presidente para presidir el Senado reveló que el lunes
-                  enviarán el ambicioso plan de reformas al Congreso.
+                <p class="text-primary-700 font-[400] text-sm leading-tight">
+                  En el mes de febrero salimos al mercado con un nuevo servicio
+                  diseñado a medida para ADECASH, UN CORE DE PRESTAMOS que
+                  genera una experiencia única, ágil y simple para la solicitud
+                  de adelanto de haberes. Se trata de un producto para un
+                  segmento cerrado y escalable. <br />
+                  Bienvenidos a la comunidad ARGON GLOBAL TECH
                 </p>
               </div>
             </div>
@@ -263,8 +235,12 @@
       <a href="/">
         <img src="icono-negativo.png" class="w-[5.5rem] mx-11" alt="" />
       </a>
-      <div class="flex items-start justify-between mx-16">
-        <div class="flex gap-36 text-xs font-[200] leading-[1.15rem]">
+      <div
+        class="flex items-start justify-between mx-16 flex-col md:flex-row gap-8 md:gap-0"
+      >
+        <div
+          class="flex gap-8 md:gap-36 text-xs font-[200] leading-[1.15rem] flex-col md:flex-row"
+        >
           <div class="flex flex-col">
             <div class="">
               <ul>
@@ -283,9 +259,15 @@
               <ul>
                 <li class="text-sm font-[600]">Navegación</li>
                 <li><a href="quienes-somos.html">Quiénes somos</a></li>
-                <li><a href="productos-y-servicios.html">Productos & servicios</a></li>
+                <li>
+                  <a href="productos-y-servicios.html">Productos & servicios</a>
+                </li>
                 <li><a href="stack-tecnologico.html">Stack tecnológico</a></li>
-                <li><a href="clientes-y-experiencias.html">Clientes & experiencias</a></li>
+                <li>
+                  <a href="clientes-y-experiencias.html"
+                    >Clientes & experiencias</a
+                  >
+                </li>
                 <li><a href="equipo-argon.html">Equipo Argón</a></li>
                 <li><a href="habla-con-argon.html">Hablá con Argón</a></li>
                 <li><a href="#">Campus Argón</a></li>
@@ -305,11 +287,7 @@
                 <a
                   href="https://ar.linkedin.com/company/argonglobaltech?trk=public_profile_topcard-current-company"
                 >
-                  <img
-                    src="linkedin-logo.png"
-                    class="w-[2.1rem]"
-                    alt=""
-                  />
+                  <img src="linkedin-logo.png" class="w-[2.1rem]" alt="" />
                 </a>
               </div>
             </li>
